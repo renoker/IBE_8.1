@@ -12,6 +12,7 @@ export default defineConfig({
                 'resources/js/nosotros.js',
                 'resources/js/servicios.js',
                 'resources/js/turnkey.js',
+                'resources/js/detalle.js',
                 'resources/sass/main.scss',
             ],
             refresh: true,

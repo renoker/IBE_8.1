@@ -6,10 +6,10 @@
         <div class="banner">
             <div class="content_inter_banner">
                 <div class="part_one">
-                    <h1 class="encabezado">Servicios</h1>
-                    <p class="text">Contamos con una amlplia cartera de equipos y servicos totalmente dirigidos a la
-                        agroindustria e industria en general, integrando cada una de nuestras especialidades para así lograr
-                        el beneficio y productividad de la planta.</p>
+                    <h1 class="encabezado">{{ __('Services') }}</h1>
+                    <p class="text">
+                        {{ __('We have a wide portfolio of equipment and services totally aimed at agribusiness and industry in general, integrating each of our specialties to achieve the benefit and productivity of the plant.') }}
+                    </p>
                 </div>
                 <div class="part_two">
                     <img src="{{ url('images/logo_border.png') }}" alt="">
@@ -21,10 +21,10 @@
             <img src="{{ url('images/back_contacto.jpg') }}" class="iamgen_fondo" alt="">
             <div class="opacidad">
                 <div class="content_contacto">
-                    <h1 class="h1">Contáctanos</h1>
-                    <p class="p">Gracias por visitarnos, si requieres preguntar por alguno de nuestros productos o
-                        servicios contáctanos por medio de nuestros números telefónicos, correos o redes sociales, te
-                        responderemos de inmediato.</p>
+                    <h1 class="h1">{{ __('Contact Us') }}</h1>
+                    <p class="p">
+                        {{ __('Thank you for visiting us, if you need to ask about any of our products or services, contact us through our telephone numbers, emails or social networks, we will respond immediately.') }}
+                    </p>
                     <form action="{{ route('contact.store') }}" method="post">
                         @method('POST')
                         @csrf
@@ -32,31 +32,32 @@
                             <div class="icon_input">
                                 <img src="{{ url('images/user.png') }}" alt="">
                             </div>
-                            <input type="text" placeholder="Nombre" name="name">
+                            <input type="text" placeholder="{{ __('Name') }}" name="name">
                         </div>
                         <div class="box_input mt-15">
                             <div class="icon_input">
                                 <img src="{{ url('images/ping.png') }}" alt="">
                             </div>
-                            <input type="text" placeholder="Compañia" name="company">
+                            <input type="text" placeholder="{{ __('Company') }}" name="company">
                         </div>
                         <div class="box_input mt-15">
                             <div class="icon_input">
                                 <img src="{{ url('images/cel.png') }}" alt="">
                             </div>
-                            <input type="tel" placeholder="Teléfono" name="phone">
+                            <input type="tel" placeholder="{{ __('Phone') }}" name="phone">
                         </div>
                         <div class="box_input mt-15">
                             <div class="icon_input">
                                 <img src="{{ url('images/cartita.png') }}" alt="">
                             </div>
-                            <input type="email" placeholder="Correo" name="email">
+                            <input type="email" placeholder="{{ __('Email') }}" name="email">
                         </div>
                         <div class="box_input mt-15">
-                            <textarea name="message" id="" cols="30" rows="5" class="textarea" placeholder="Mensaje"></textarea>
+                            <textarea name="message" id="" cols="30" rows="5" class="textarea"
+                                placeholder="{{ __('Message') }}"></textarea>
                         </div>
                         <div class="content_button_footer_send">
-                            <button type="submit">Envíar</button>
+                            <button type="submit">{{ __('Send') }}</button>
                         </div>
                     </form>
                 </div>

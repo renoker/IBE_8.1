@@ -5,9 +5,10 @@
     <div id="popup">
         <div class="opacity" id="closePopUp">
             <div class="content_contacto">
-                <h1 class="h1">Cuestionario</h1>
-                <p class="p">En IBE Solutions queremos ser un auxiliar primordial para el desarrollo de su empresa.
-                    compártenos tus datos de contacto y un asesor se comunicará contigo.</p>
+                <h1 class="h1">{{ __('Questionnaire') }}</h1>
+                <p class="p">
+                    {{ __('At IBE Solutions we want to be a primary assistant for the development of your company. Share your contact information with us and an advisor will contact you.') }}
+                </p>
                 <form action="{{ route('cotizacion.store') }}" method="post">
                     @method('POST')
                     @csrf
@@ -53,12 +54,10 @@
         <div class="banner_general">
             <div class="content_inter_banner">
                 <div class="part_one">
-                    <h1 class="encabezado">Nuestro catálogo</h1>
-                    <p class="text">En IBE SOLUTIONS ofrecemos el servicio de diseño y desarrollo de equipos para
-                        cualquier
-                        sector industrial y grado alimenticio. Contamos con un extenso catálogo de productos, sin embargo,
-                        en nuestra compañía contamos con el alcance para realizar diseños personalizados basados en las
-                        necesidades y expectativas de nuestras partes interesadas.</p>
+                    <h1 class="encabezado">{{ __('Our catalog') }}</h1>
+                    <p class="text">
+                        {{ __('At IBE SOLUTIONS we offer the design and development service of equipment for any industrial sector and food grade. We have an extensive catalog of products, however, in our company we have the scope to make personalized designs based on the needs and expectations of our interested parties.') }}
+                    </p>
                 </div>
                 <div class="part_two">
                     <img src="{{ url('images/Sello.png') }}" alt="">
@@ -99,19 +98,19 @@
                 <div class="left">
                     <h1 class="h1">{{ $row->name }}</h1>
                     <div class="box_model">
-                        <h6 class="h6">Modelo: </h6>
+                        <h6 class="h6">{{ __('Model:') }}</h6>
                         <div class="iso">
                             <p>{{ $row->model }}</p>
                         </div>
                     </div>
-                    <h1 class="encabezado">Especificaciones</h1>
-                    <h6 class="h6_g">Fabricación:</h6>
+                    <h1 class="encabezado">{{ __('Specifications') }}</h1>
+                    <h6 class="h6_g">{{ __('Manufacturing:') }}</h6>
                     <p class="parrafo">{{ $row->fabricacion }}</p>
-                    <h6 class="h6_g">Capacidad:</h6>
+                    <h6 class="h6_g">{{ __('Capacity:') }}</h6>
                     <p class="parrafo">{{ $row->capacidad }}</p>
-                    <h6 class="h6_g">Componentes y transmición:</h6>
+                    <h6 class="h6_g">{{ __('Components and transmission:') }}</h6>
                     <p class="parrafo">{{ $row->componentes }}</p>
-                    <h6 class="h6_g">Objetivo</h6>
+                    <h6 class="h6_g">{{ __('Objetive') }}</h6>
                     <p class="parrafo pb">{{ $row->objetivo }}</p>
                     <div class="content_frutas">
                         @foreach ($frutas as $item)
@@ -127,12 +126,12 @@
                         <img src="{{ url($row->logo_servicio) }}" class="modelo_img" alt="">
                     </div>
                     <div class="contenedor_botones_detalle">
-                        <button type="button" class="btn_large" id="openPopUp">Cotizar</button>
+                        <button type="button" class="btn_large" id="openPopUp">{{ __('Quote') }}</button>
                         <div class="cont_slider_buttons">
                             <input type="hidden" value="{{ $row->id }}" id="posicion">
                             <button type="button" class="btn_large" id="prew"><x-icons.arrowIzq />
-                                Anterior</button>
-                            <button type="button" class="btn_large" id="next">Siguiente
+                                {{ __('Former') }}</button>
+                            <button type="button" class="btn_large" id="next">{{ __('Following') }}
                                 <x-icons.arrowDerechaBig /></button>
                         </div>
                     </div>
