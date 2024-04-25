@@ -228,8 +228,15 @@
                 {{-- Barras --}}
                 <div class="content_horizontal">
                     <h1 class="encabezado_servicios">{{ __('Services') }}</h1>
+
                     <div class="item_barra">
-                        <div class="part_one_l">
+                        <div class="part_two">
+                            <img src="{{ url('images/Rectangle_1.png') }}" alt="">
+                        </div>
+                        <div class="part_two_slider">
+                            <img src="{{ url('images/Rectangle_b_1.png') }}" class="img_slid" alt="">
+                        </div>
+                        <div class="part_one">
                             <div class="box_info">
                                 <h1 class="h1">{!! htmlspecialchars_decode(__('Manufacturing')) !!}</h1>
                                 <p class="p">{!! htmlspecialchars_decode(
@@ -245,21 +252,9 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="part_two">
-                            <img src="{{ url('images/Rectangle_2.png') }}" alt="">
-                        </div>
-                        <div class="part_two_slider">
-                            <img src="{{ url('images/Rectangle_b_2.png') }}" class="img_slid" alt="">
-                        </div>
                     </div>
-                    <div class="item_barra  mt-10">
-                        <div class="part_two">
-                            <img src="{{ url('images/Rectangle_1.png') }}" alt="">
-                        </div>
-                        <div class="part_two_slider">
-                            <img src="{{ url('images/Rectangle_b_1.png') }}" class="img_slid" alt="">
-                        </div>
-                        <div class="part_one">
+                    <div class="item_barra mt-10">
+                        <div class="part_one_l">
                             <div class="box_info">
                                 <h1 class="h1">{!! htmlspecialchars_decode(__('Design')) !!}</h1>
                                 <p class="p">{!! htmlspecialchars_decode(
@@ -274,6 +269,12 @@
                                     </div>
                                 </a>
                             </div>
+                        </div>
+                        <div class="part_two">
+                            <img src="{{ url('images/Rectangle_2.png') }}" alt="">
+                        </div>
+                        <div class="part_two_slider">
+                            <img src="{{ url('images/Rectangle_b_2.png') }}" class="img_slid" alt="">
                         </div>
                     </div>
                     <div class="item_barra mt-10">
