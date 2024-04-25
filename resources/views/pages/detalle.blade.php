@@ -14,25 +14,25 @@
                     <input type="hidden" name="directorie_id" value="{{ $row->id }}">
                     <div class="box_input">
                         <div class="icon_input">
-                            <img src="{{ url('icons/user.png') }}" alt="">
+                            <img src="{{ url('images/user.png') }}" alt="">
                         </div>
                         <input type="text" placeholder="Nombre" name="name">
                     </div>
                     <div class="box_input mt-15">
                         <div class="icon_input">
-                            <img src="{{ url('icons/ping.png') }}" alt="">
+                            <img src="{{ url('images/ping.png') }}" alt="">
                         </div>
                         <input type="text" placeholder="Compañia" name="company">
                     </div>
                     <div class="box_input mt-15">
                         <div class="icon_input">
-                            <img src="{{ url('icons/cel.png') }}" alt="">
+                            <img src="{{ url('images/cel.png') }}" alt="">
                         </div>
                         <input type="tel" placeholder="Teléfono" name="phone">
                     </div>
                     <div class="box_input mt-15">
                         <div class="icon_input">
-                            <img src="{{ url('icons/cartita.png') }}" alt="">
+                            <img src="{{ url('images/cartita.png') }}" alt="">
                         </div>
                         <input type="email" placeholder="Correo" name="email">
                     </div>
@@ -61,7 +61,7 @@
                         necesidades y expectativas de nuestras partes interesadas.</p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/Sello.png') }}" alt="">
+                    <img src="{{ url('images/Sello.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -87,9 +87,9 @@
                     </section>
                 </div>
                 <div class="sellos">
-                    <img src="{{ url('icons/sello_1.png') }}" class="img_sello" alt="">
-                    <img src="{{ url('icons/sello_2.png') }}" class="img_sello" alt="">
-                    <img src="{{ url('icons/iso_9001.png') }}" class="img_sello_2" alt="">
+                    <img src="{{ url('images/sello_1.png') }}" class="img_sello" alt="">
+                    <img src="{{ url('images/sello_2.png') }}" class="img_sello" alt="">
+                    <img src="{{ url('images/iso_9001.png') }}" class="img_sello_2" alt="">
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                     </a>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/hand_key.png') }}" alt="">
+                    <img src="{{ url('images/hand_key.png') }}" alt="">
                 </div>
             </div>
         </div>

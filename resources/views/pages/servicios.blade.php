@@ -12,7 +12,7 @@
                             <ul class="splide__list">
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">{{ __('Machinery manufacturing') }}</h1>
                                             <p class="text">
@@ -23,7 +23,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">{{ __('Manufacture of parts in series') }}</h1>
                                             <p class="text">
@@ -34,7 +34,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">{{ __('Online designs') }}</h1>
                                             <p class="text">
@@ -45,7 +45,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">{{ __('Custom designs') }}</h1>
                                             <p class="text">
@@ -56,7 +56,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">{{ __('Control boards') }}</h1>
                                             <p class="text">
@@ -67,7 +67,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">{{ __('Industrial automation') }}</h1>
                                             <p class="text">
@@ -78,7 +78,7 @@
                                 </li>
                                 <li class="splide__slide">
                                     <div class="n">
-                                        <img src="{{ url('icons/icon_home_iqnet.png') }}" class="logo" alt="">
+                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
                                         <div class="bx">
                                             <h1 class="encabezado">Refurbish</h1>
                                             <p class="text">
@@ -96,8 +96,8 @@
                     </section>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/prew.png') }}" id="btnPrev" alt="">
-                    <img src="{{ url('icons/next.png') }}" id="btnNext" alt="">
+                    <img src="{{ url('images/prew.png') }}" id="btnPrev" alt="">
+                    <img src="{{ url('images/next.png') }}" id="btnNext" alt="">
                 </div>
             </div>
         </div>
@@ -400,7 +400,7 @@
                 </a>
             </div>
             <div class="part_two">
-                <img src="{{ url('icons/hand_key.png') }}" alt="">
+                <img src="{{ url('images/hand_key.png') }}" alt="">
             </div>
         </div>
 

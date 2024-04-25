@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/Sello.png') }}" alt="">
+                    <img src="{{ url('images/Sello.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                         </a>
                     </div>
                     <div class="part_two">
-                        <img src="{{ url('icons/hand_key.png') }}" alt="">
+                        <img src="{{ url('images/hand_key.png') }}" alt="">
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/Sello.png') }}" alt="">
+                    <img src="{{ url('images/Sello.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                     </a>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/hand_key.png') }}" alt="">
+                    <img src="{{ url('images/hand_key.png') }}" alt="">
                 </div>
             </div>
             {{-- Iconos --}}
@@ -99,7 +99,7 @@
                 <div class="item_barra">
                     <div class="part_one">
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_1.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_1.png') }}" alt="">
                         </div>
                         <div class="box_info">
                             <h1 class="h1">{{ __('Civil Works') }}</h1>
@@ -159,7 +159,7 @@
                             </p>
                         </div>
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_2.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_2.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                 <div class="item_barra mt-10">
                     <div class="part_one">
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_3.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_3.png') }}" alt="">
                         </div>
                         <div class="box_info">
                             <h1 class="h1">{!! htmlspecialchars_decode(__('Electrical Installation')) !!}</h1>
@@ -231,7 +231,7 @@
                             ) !!}</p>
                         </div>
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_4.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_4.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                 <div class="item_barra mt-10">
                     <div class="part_one">
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_5.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_5.png') }}" alt="">
                         </div>
                         <div class="box_info">
                             <h1 class="h1">{!! htmlspecialchars_decode(__('Plant Layout Distribution')) !!}</h1>
@@ -299,7 +299,7 @@
                             <p class="p">{!! htmlspecialchars_decode(__('Installation of the entire process line and peripherals')) !!}</p>
                         </div>
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_6.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_6.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -307,7 +307,7 @@
                 <div class="item_barra mt-10">
                     <div class="part_one">
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_7.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_7.png') }}" alt="">
                         </div>
                         <div class="box_info">
                             <h1 class="h1">{!! htmlspecialchars_decode(__('Commissioning')) !!}</h1>
@@ -363,7 +363,7 @@
                             <p class="p">{!! htmlspecialchars_decode(__('We provide the training to be able to operate your plant without any problem.')) !!}</p>
                         </div>
                         <div class="box_img">
-                            <img src="{{ url('icons/icon_b_8.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_8.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -391,9 +391,9 @@
                         </section>
                     </div>
                     <div class="sellos">
-                        <img src="{{ url('icons/sello_1.png') }}" class="img_sello" alt="">
-                        <img src="{{ url('icons/sello_2.png') }}" class="img_sello" alt="">
-                        <img src="{{ url('icons/iso_9001.png') }}" class="img_sello" alt="">
+                        <img src="{{ url('images/sello_1.png') }}" class="img_sello" alt="">
+                        <img src="{{ url('images/sello_2.png') }}" class="img_sello" alt="">
+                        <img src="{{ url('images/iso_9001.png') }}" class="img_sello" alt="">
                     </div>
                 </div>
             </div>

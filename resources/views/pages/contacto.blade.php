@@ -12,7 +12,7 @@
                         el beneficio y productividad de la planta.</p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/logo_border.png') }}" alt="">
+                    <img src="{{ url('images/logo_border.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -30,25 +30,25 @@
                         @csrf
                         <div class="box_input">
                             <div class="icon_input">
-                                <img src="{{ url('icons/user.png') }}" alt="">
+                                <img src="{{ url('images/user.png') }}" alt="">
                             </div>
                             <input type="text" placeholder="Nombre" name="name">
                         </div>
                         <div class="box_input mt-15">
                             <div class="icon_input">
-                                <img src="{{ url('icons/ping.png') }}" alt="">
+                                <img src="{{ url('images/ping.png') }}" alt="">
                             </div>
                             <input type="text" placeholder="Compañia" name="company">
                         </div>
                         <div class="box_input mt-15">
                             <div class="icon_input">
-                                <img src="{{ url('icons/cel.png') }}" alt="">
+                                <img src="{{ url('images/cel.png') }}" alt="">
                             </div>
                             <input type="tel" placeholder="Teléfono" name="phone">
                         </div>
                         <div class="box_input mt-15">
                             <div class="icon_input">
-                                <img src="{{ url('icons/cartita.png') }}" alt="">
+                                <img src="{{ url('images/cartita.png') }}" alt="">
                             </div>
                             <input type="email" placeholder="Correo" name="email">
                         </div>

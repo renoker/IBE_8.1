@@ -7,7 +7,7 @@
             <img src="{{ url('images/tortilla.gif') }}" class="img_banner" alt="">
             <div class="content_inter_banner">
                 <div class="part_one">
-                    <img src="{{ url('icons/logo_color.png') }}" class="logo" alt="">
+                    <img src="{{ url('images/logo_color.png') }}" class="logo" alt="">
                     <section class="splide" id="principal" aria-label="">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -38,8 +38,8 @@
                     </section>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/prew.png') }}" id="btnPrev" alt="">
-                    <img src="{{ url('icons/next.png') }}" id="btnNext" alt="">
+                    <img src="{{ url('images/prew.png') }}" id="btnPrev" alt="">
+                    <img src="{{ url('images/next.png') }}" id="btnNext" alt="">
                 </div>
             </div>
         </div>
@@ -67,14 +67,14 @@
                         </a>
                     </div>
                     <div class="sellos">
-                        <img src="{{ url('icons/sello_1.png') }}" class="img_sello" alt="">
-                        <img src="{{ url('icons/sello_2.png') }}" class="img_sello" alt="">
+                        <img src="{{ url('images/sello_1.png') }}" class="img_sello" alt="">
+                        <img src="{{ url('images/sello_2.png') }}" class="img_sello" alt="">
                     </div>
                 </div>
             </div>
             <div class="box_ibe_integral">
                 <div class="part_two">
-                    <img src="{{ url('icons/icon_home_iqnet.png') }}" alt="">
+                    <img src="{{ url('images/icon_home_iqnet.png') }}" alt="">
                 </div>
                 <div class="part_one">
                     <h1 class="h1">IBE Integral Solutions</h1>
@@ -167,7 +167,7 @@
                         </a>
                     </div>
                     <div class="part_two">
-                        <img src="{{ url('icons/hand_key.png') }}" alt="">
+                        <img src="{{ url('images/hand_key.png') }}" alt="">
                     </div>
                 </div>
                 <div class="content_icons_info">
@@ -356,43 +356,43 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/fresh.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/fresh.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/Frutival.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/Frutival.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/sagroexport.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/sagroexport.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/jonson_controls.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/jonson_controls.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/axis.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/axis.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/Motus.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/Motus.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/texbel.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/texbel.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/villita.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/villita.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/agroexport.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/agroexport.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/calavo.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/calavo.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/Coliman1.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/Coliman1.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/EASTMAN.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/EASTMAN.png') }}" alt="">
                                 </li>
                                 <li class="splide__slide">
-                                    <img src="{{ url('icons/clientes/Evofrut.png') }}" alt="">
+                                    <img src="{{ url('images/clientes/Evofrut.png') }}" alt="">
                                 </li>
                             </ul>
                         </div>

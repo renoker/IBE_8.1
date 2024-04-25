@@ -15,7 +15,7 @@
                     ) !!}</p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('icons/Sello.png') }}" alt="">
+                    <img src="{{ url('images/Sello.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -25,25 +25,25 @@
             <div class="box_cuadros">
                 <div class="cuadro">
                     <div class="int">
-                        <img src="{{ url('icons/nosotros_icon_1.png') }}" alt="">
+                        <img src="{{ url('images/nosotros_icon_1.png') }}" alt="">
                         <p class="info">{{ __('Meeting your expectations and more, always on the first try!') }}</p>
                     </div>
                 </div>
                 <div class="cuadro">
                     <div class="int">
-                        <img src="{{ url('icons/nosotros_icon_2.png') }}" alt="">
+                        <img src="{{ url('images/nosotros_icon_2.png') }}" alt="">
                         <p class="info">{{ __('Always be persistent until achieving the goal') }}</p>
                     </div>
                 </div>
                 <div class="cuadro">
                     <div class="int">
-                        <img src="{{ url('icons/nosotros_icon_3.png') }}" alt="">
+                        <img src="{{ url('images/nosotros_icon_3.png') }}" alt="">
                         <p class="info">{{ __('Working shoulder to shoulder') }}</p>
                     </div>
                 </div>
                 <div class="cuadro">
                     <div class="int">
-                        <img src="{{ url('icons/nosotros_icon_4.png') }}" alt="">
+                        <img src="{{ url('images/nosotros_icon_4.png') }}" alt="">
                         <p class="info">
                             {{ __('Awareness of the importance of goals and expectations of our stakeholders') }}</p>
                     </div>
@@ -73,9 +73,9 @@
                     </section>
                 </div>
                 <div class="sellos">
-                    <img src="{{ url('icons/sello_1.png') }}" class="img_sello" alt="">
-                    <img src="{{ url('icons/sello_2.png') }}" class="img_sello" alt="">
-                    <img src="{{ url('icons/iso_9001.png') }}" class="img_sello" alt="">
+                    <img src="{{ url('images/sello_1.png') }}" class="img_sello" alt="">
+                    <img src="{{ url('images/sello_2.png') }}" class="img_sello" alt="">
+                    <img src="{{ url('images/iso_9001.png') }}" class="img_sello" alt="">
                 </div>
             </div>
         </div>
@@ -176,25 +176,25 @@
                     @csrf
                     <div class="box_input">
                         <div class="icon_input">
-                            <img src="{{ url('icons/user.png') }}" alt="">
+                            <img src="{{ url('images/user.png') }}" alt="">
                         </div>
                         <input type="text" placeholder="{{ __('Name') }}" name="name">
                     </div>
                     <div class="box_input mt-15">
                         <div class="icon_input">
-                            <img src="{{ url('icons/ping.png') }}" alt="">
+                            <img src="{{ url('images/ping.png') }}" alt="">
                         </div>
                         <input type="text" placeholder="{{ __('Company') }}" name="company">
                     </div>
                     <div class="box_input mt-15">
                         <div class="icon_input">
-                            <img src="{{ url('icons/cel.png') }}" alt="">
+                            <img src="{{ url('images/cel.png') }}" alt="">
                         </div>
                         <input type="tel" placeholder="{{ __('Phone') }}" name="phone">
                     </div>
                     <div class="box_input mt-15">
                         <div class="icon_input">
-                            <img src="{{ url('icons/cartita.png') }}" alt="">
+                            <img src="{{ url('images/cartita.png') }}" alt="">
                         </div>
                         <input type="email" placeholder="{{ __('Email') }}" name="email">
                     </div>
