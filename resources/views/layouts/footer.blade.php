@@ -4,7 +4,7 @@
             <div class="part-left">
                 <div class="box_info_footer">
                     <div class="left">
-                        <img src="{{ url('icons/IBE-Logotipo_06.png') }}" alt="" class="logo_footer">
+                        <img src="{{ url('images/IBE-Logotipo_06.png') }}" alt="" class="logo_footer">
                         <h6 class="h6_logo">Integral Solutions</h6>
                         <p class="p_logo">
                             {!! htmlspecialchars_decode(__('Productive Processes <br> Agroindustrial')) !!}
