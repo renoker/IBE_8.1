@@ -21,7 +21,7 @@
         </div>
         {{-- Nuestros Valores --}}
         <div class="box_general">
-            <h1 class="h1">{{ __('Our Values') }}</h1>
+            <h1 class="h1 pd">{{ __('Our Values') }}</h1>
             <div class="box_cuadros">
                 <div class="cuadro">
                     <div class="int">

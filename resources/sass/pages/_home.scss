@@ -37,6 +37,9 @@
         text-align: left;
         color: var(--primary);
         padding: 0rem 0;
+        &.pd {
+            padding: 4rem 0;
+        }
     }
     .box_cuadros {
         width: 100%;
