@@ -1,9 +1,10 @@
 @extends('layouts.main')
 @section('title', 'IBE - Home')
-@section('boby', 'main_body')
+@section('boby', 'main_body_home')
 @section('content')
     <div class="conten_padre">
         <div class="content_banner_slider">
+            <div class="opa"></div>
             <video src="{{ url('videos/video.mp4') }}" autoplay loop class="img_banner"></video>
             <div class="content_inter_banner">
                 <div class="part_one">
