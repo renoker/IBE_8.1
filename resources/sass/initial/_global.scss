@@ -1,0 +1,376 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body{
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  background: var(--primario-negro);
+  color: var(--primario-negro);
+}
+
+main{
+  width: 100%;
+  position: relative;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.parallax-container {
+  height: 100vh; /* Adjust as needed */
+  overflow-x: hidden;
+  overflow-y: auto;
+  // perspective: 1px;
+}
+
+.parallax {
+  height: 200vh; /* Adjust to control the amount of parallax */
+  background-image: url(../../../public/images/back.jpg); /* Replace with your image */
+  background-size: cover;
+  transform-origin: top center;
+  transform: translateZ(-1px) scale(1); /* Adjust scale for desired effect */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+
+
+a, button, img, input, span {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a, button {
+  color: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+
+
+.conten_padre {
+  width: 100%;
+}
+
+.content_banner_slider {
+  width: 100%;
+  position: relative;
+  @include flex(flex, center, center, 0);      
+  &.mb {
+    margin-bottom: 4rem;
+  }
+  .img_banner {
+    width: 100%;
+    position: relative;
+  }
+  .content_inter_banner {
+    width: 90%;  
+    max-width: $width-general;    
+    position: absolute;
+    @include flex(flex, space-between, flex-end, 15px);      
+    .part_one {
+      width: 70%;
+      .logo {
+        padding-bottom: 20px;
+        &.servicios {
+          width: 130px;
+        }
+      }
+      .encabezado {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;          
+        color: var(--blanco);
+      }
+      .text {
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+        color: var(--blanco);
+      }
+    }
+    .part_two {
+      cursor: pointer;
+      @include flex(flex, center, flex-start, 15px);
+    }
+  }
+}
+
+.banner_general {
+  background: url(../../../public/images/nosotros.jpg);
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+  @include flex(flex, center, center, 0);      
+  .content_inter_banner {
+    width: 90%;  
+    max-width: $width-general;    
+    position: absolute;
+    @include flex(flex, space-between, center, 0);      
+    .part_one {
+      width: 65%;
+      .encabezado {
+        font-size: 68px;
+        font-weight: 700;
+        line-height: 68px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--blanco);
+      }
+      .text {
+        padding-top: 2rem;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--blanco);
+      }
+    }
+    .part_two {
+      width: 30%;
+      text-align: right;
+    }
+  }
+}
+
+.splide {
+  padding: 0em;
+}
+
+.splide__pagination {
+  bottom: -2em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.splide__pagination__page {
+  background: #ccc;
+  border: 0;
+  border-radius: 0px;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+  transition: background-color .2s linear;
+  width: 35px;
+}
+
+.splide__pagination__page.is-active {
+  width: 29px;
+  background: var(--primary);
+  z-index: 1;
+}
+
+.href {
+  width: 100%;
+  margin: 20px 0;
+  @include flex(flex, flex-start, center, 10px); 
+  .p {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;                    
+      color: var(--primary);                   
+  } 
+  svg path { fill: var(--primary)}
+  svg circle { fill: var(--primary)}
+  svg rect { fill: var(--primary)}   
+  svg {
+      width: 12px;
+      height: 17.57px;
+  }   
+  &:hover {
+      svg path { fill: var(--amarillo)}
+      svg circle { fill: var(--amarillo)}
+      svg rect { fill: var(--amarillo)}   
+      svg {
+          width: 12px;
+          height: 17.57px;
+      }                       
+  }             
+}
+
+.href_blanco {
+  width: 100%;
+  margin: 45px 0 0 0;
+  @include flex(none, flex-start, center, 10px); 
+  .p_a{
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;                    
+      color: var(--blanco);                   
+  } 
+  svg path { fill: var(--blanco)}
+  svg circle { fill: var(--blanco)}
+  svg rect { fill: var(--blanco)}   
+  svg {
+      width: 12px;
+      height: 17.57px;
+  }   
+  &:hover {
+      svg path { fill: var(--amarillo)}
+      svg circle { fill: var(--amarillo)}
+      svg rect { fill: var(--amarillo)}   
+      svg {
+          width: 12px;
+          height: 17.57px;
+      }                       
+  }             
+}
+
+.encabe {
+  width: $width-general;
+  margin: 6rem auto 2rem auto;  
+  @include flex(flex, flex-start, center, 10px); 
+  .logo_serv {
+    width: 300px;
+  }  
+  .h1_encabezado {        
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary);    
+    padding: 4rem 0 60px 0;    
+  }   
+}
+
+
+
+.content_banner_azul {
+  width: $width-general;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--primary);          
+  @include flex(flex, space-between, center, 20px);
+  &.mb {
+    margin-bottom: 6rem;
+  }
+  .part_one {
+      width: 73%;                
+      .b {                
+          @include flex(flex, space-between, center, 20px);                
+          .h1 {
+              font-size: 30px;
+              font-weight: 700;
+              line-height: 34px;
+              letter-spacing: 0em;
+              text-align: left;                
+              color: var(--blanco);            
+          }
+          .box_amarillo {
+              border-radius: 25px;
+              padding: 10px 20px;
+              background-color: var(--blanco);
+              p {
+                  font-size: 48px;
+                  font-weight: 700;
+                  line-height: 48px;
+                  letter-spacing: 0em;
+                  text-align: center;
+                  color: var(--amarillo);                        
+              }
+          }
+      }
+      .text {            
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 23px;
+          letter-spacing: -0.02em;
+          text-align: left;
+          color: #D9D9D9;
+          padding-top: 20px;
+          span {
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 21px;
+              letter-spacing: -0.02em;
+              text-align: left;
+              color: #FFF;
+          }                        
+      }
+      .href_blanco {
+          width: 100%;
+          margin: 20px 0 0 0;
+          @include flex(flex, flex-start, center, 10px); 
+          .p_a{
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 12px;
+              letter-spacing: 0em;
+              text-align: left;                    
+              color: var(--blanco);                   
+          } 
+          svg path { fill: var(--blanco)}
+          svg circle { fill: var(--blanco)}
+          svg rect { fill: var(--blanco)}   
+          svg {
+              width: 12px;
+              height: 17.57px;
+          }   
+          &:hover {
+              svg path { fill: var(--amarillo)}
+              svg circle { fill: var(--amarillo)}
+              svg rect { fill: var(--amarillo)}   
+              svg {
+                  width: 12px;
+                  height: 17.57px;
+              }                       
+          }             
+        }            
+  }
+  .part_two {
+      width: 22%;
+  }
+} 
