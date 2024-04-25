@@ -38,7 +38,7 @@ body, html {
 
 .parallax {
   height: 200vh; /* Adjust to control the amount of parallax */
-  background-image: url(../../../public/images/back.jpg); /* Replace with your image */
+  background-image: url(../../../images/back.jpg); /* Replace with your image */
   background-size: cover;
   transform-origin: top center;
   transform: translateZ(-1px) scale(1); /* Adjust scale for desired effect */
@@ -134,7 +134,7 @@ a:hover{
 }
 
 .banner_general {
-  background: url(../../../public/images/nosotros.jpg);
+  background: url(../../../images/nosotros.jpg);
   /* Set a specific height */
   min-height: 400px;
   /* Create the parallax scrolling effect */
