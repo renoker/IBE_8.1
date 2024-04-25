@@ -9,7 +9,10 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/global.js',
                 'resources/js/home.js',
-                'resources/sass/main.scss'
+                'resources/js/nosotros.js',
+                'resources/js/servicios.js',
+                'resources/js/servicios.js',
+                'resources/sass/turnkey.scss',
             ],
             refresh: true,
         }),
