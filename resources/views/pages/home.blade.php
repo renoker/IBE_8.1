@@ -78,7 +78,15 @@
                     <img src="{{ url('images/icon_home_iqnet.png') }}" alt="">
                 </div>
                 <div class="part_one">
-                    <h1 class="h1">IBE Integral Solutions</h1>
+                    <div class="left">
+                        <img src="{{ url('images/IBE-Logotipo_06.png') }}" alt="" class="logo_footer">
+                        <div>
+                            <h6 class="h6_logo">Integral Solutions</h6>
+                            <p class="p_logo">
+                                {!! htmlspecialchars_decode(__('Productive Processes <br> Agroindustrial')) !!}
+                            </p>
+                        </div>
+                    </div>
                     <p class="text">
                         {!! htmlspecialchars_decode(
                             __(
@@ -124,7 +132,7 @@
                 <div class="int">
                     @foreach ($list as $item)
                         <div class="box_maquina">
-                            <img src="{{ url($item->image) }}" alt="">
+                            <img src="{{ url($item->image) }}" class="box_img" alt="">
                             <h1 class="h1">{{ $item->name }}</h1>
                             <div class="iso">
                                 <p>{{ $item->model }}</p>

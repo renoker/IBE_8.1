@@ -652,14 +652,33 @@
         @include flex(flex, space-between, center, 20px);
         .part_one {
             width: 73%;
-            .h1 {
-                font-size: 64px;
-                font-weight: 700;
-                line-height: 64px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: var(--blanco);            
-            }
+            .left {
+                width: 60%;     
+                display: flex;
+                justify-content: flex-start;                   
+                align-items: center;
+                gap: 20px;
+                .logo_footer {
+                    width: 155px;
+                    height: 51.12px;                        
+                }
+                .h6_logo {
+                    font-family: $font-inter;
+                    font-size: 21px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    letter-spacing: -0.045em;
+                    color: var(--blanco);                        
+                }
+                .p_logo {
+                    font-family: $font-inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: -0.045em;   
+                    color: var(--blanco);                       
+                }
+            }            
             .text {   
                 padding-top: 15px;                    
                 font-size: 18px;
@@ -786,16 +805,25 @@
             @include flex(flex, space-between, flex-start, 0px);
             width: 100%;
             .box_maquina {
-                background-color: var(--blanco);
+                background-color: rgba($color: #FFF, $alpha: 0.8);
                 width: 371.98px;
                 padding: 20px;
                 border-radius: 10px;
                 border: 1px solid var(--primary);
+                text-align: center;
                 &:hover {
                     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);
                     -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);
-                    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);                   
-                }                 
+                    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32); 
+                    .box_img {
+                        width: 100%;
+                        padding: 10px 0;
+                    }                                       
+                }       
+                .box_img {
+                    width: 80%;
+                    padding: 20px 0;
+                }          
                 .h1 {
                     padding-top: 5px;
                     font-size: 26px;
