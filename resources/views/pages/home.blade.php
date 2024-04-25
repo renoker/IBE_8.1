@@ -4,7 +4,7 @@
 @section('content')
     <div class="conten_padre">
         <div class="content_banner_slider">
-            <img src="{{ url('images/tortilla.gif') }}" class="img_banner" alt="">
+            <video src="{{ url('videos/video.mp4') }}" autoplay loop class="img_banner"></video>
             <div class="content_inter_banner">
                 <div class="part_one">
                     <img src="{{ url('images/logo_color.png') }}" class="logo" alt="">

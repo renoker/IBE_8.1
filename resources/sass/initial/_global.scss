@@ -86,7 +86,7 @@ a:hover{
 .content_banner_slider {
   width: 100%;
   position: relative;
-  @include flex(flex, center, center, 0);      
+  @include flex(flex, center, flex-end, 0);      
   &.mb {
     margin-bottom: 4rem;
   }
@@ -98,6 +98,7 @@ a:hover{
     width: 90%;  
     max-width: $width-general;    
     position: absolute;
+    bottom: 100px;
     @include flex(flex, space-between, flex-end, 15px);      
     .part_one {
       width: 70%;
