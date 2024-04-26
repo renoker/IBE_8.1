@@ -8,14 +8,18 @@
             <div class="content_inter_banner">
                 <div class="part_one">
                     <h1 class="encabezado">{{ __('Our catalog') }}</h1>
+                    <p class="pro_line">Pro line process</p>
                     <p class="text">
                         {{ __('At IBE SOLUTIONS we offer the design and development service of equipment for any industrial sector and food grade. We have an extensive catalog of products, however, in our company we have the scope to make personalized designs based on the needs and expectations of our interested parties.') }}
                     </p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('images/Sello.png') }}" alt="">
+                    <img src="{{ url('images/PROLINE.png') }}" alt="">
                 </div>
             </div>
+        </div>
+        <div class="content_logo_catalogo">
+            <img src="{{ url('images/proline_2.png') }}" class="poline_2" alt="">
         </div>
         {{-- Categoria --}}
         <div class="conteiner_categoria">
@@ -80,7 +84,7 @@
                     @endforeach
                 </div>
                 {{ $maquinas->links() }}
-                <div class="content_banner_azul">
+                <div class="content_banner_azul mb">
                     <div class="part_one">
                         <div class="b">
                             <h1 class="h1">{!! htmlspecialchars_decode(__("TURNKEY PROJECT <br> 'Turnkey contract'.")) !!}</h1>
