@@ -1,9 +1,6 @@
 import Splide from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     let splide = new Splide('#principal', {
@@ -29,5 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
 new Splide('#servicios_cumplidos', {
   arrows: false,
   type: 'loop',
-  autoplay: true,
+  autoplay: false,
 }).mount();
+
+const clientes = new Splide( '#nuestros_clientes', {
+  type   : 'loop',
+  drag   : 'free',
+  focus  : 'center',
+  perPage: 6,
+  arrows: false,
+  pagination: false,
+});  
+
+clientes.mount({ AutoScroll });

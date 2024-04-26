@@ -288,7 +288,7 @@ a:hover{
 
 .encabe {
   width: $width-general;
-  margin: 6rem auto 2rem auto;  
+  margin: 0rem auto 2rem auto;  
   @include flex(flex, flex-start, center, 10px); 
   .logo_serv {
     width: 300px;
@@ -316,6 +316,9 @@ a:hover{
   &.mb {
     margin-bottom: 6rem;
   }
+  &.mt {
+    margin-top: 6rem;
+  }  
   .part_one {
       width: 73%;                
       .b {                
@@ -393,3 +396,10 @@ a:hover{
       width: 22%;
   }
 } 
+
+
+.espaciador {
+  width: 100%;
+  height: 80px;
+  background-color: var(--blanco);
+}
