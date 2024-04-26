@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title', 'IBE - Home')
-@section('boby', 'main_body_home')
+@section('boby', 'main_body')
 @section('content')
     <div class="conten_padre">
         <div class="content_banner_slider">
@@ -8,7 +8,6 @@
             <video src="{{ url('videos/video.mp4') }}" autoplay loop class="img_banner"></video>
             <div class="content_inter_banner">
                 <div class="part_one">
-                    <img src="{{ url('images/logo_color.png') }}" class="logo" alt="">
                     <section class="splide" id="principal" aria-label="">
                         <div class="splide__track">
                             <ul class="splide__list">
