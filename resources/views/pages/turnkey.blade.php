@@ -107,10 +107,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="part_two">
+                    <div class="part_two r">
                         <img src="{{ url('images/barra_1.png') }}" alt="">
                     </div>
-                    <div class="part_two_slider">
+                    <div class="part_two_slider r">
                         <section class="splide" id="barra_1" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
