@@ -28,11 +28,11 @@
                 <div class="int">
                     @foreach ($maquinas as $item)
                         <div class="box_maquina">
-                            <img src="{{ url($item->image) }}" alt="">
-                            <h1 class="h1">{{ $item->name }}</h1>
-                            <div class="iso">
-                                <p>{{ $item->model }}</p>
+                            <div class="box_imagen_maquina">
+                                <img src="{{ url($item->image) }}" class="maquina" alt="">
+                                <img src="{{ url($item->logo_servicio) }}" class="ser" alt="">
                             </div>
+                            <h1 class="h1">{{ $item->name }}</h1>
                             <p class="txt_slider">
                                 {{ $item->objetivo }}
                             </p>

@@ -1325,7 +1325,7 @@
             margin: 0 auto;  
             .int {
                 width: 100%;
-                @include flex(flex, space-between, flex-start, 42px);                
+                @include flex(flex, space-between, normal, 42px);                
                 flex-wrap: wrap;
                 .box_maquina {
                     background-color: var(--blanco);
@@ -1337,7 +1337,16 @@
                         box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);
                         -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);
                         -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);                 
-                    }                      
+                    }         
+                    .box_imagen_maquina {
+                        @include flex(flex, space-between, center, 0);  
+                        .maquina {
+                            width: 90%;
+                        }
+                        .ser {
+                            width: 17px;
+                        }
+                    }             
                     .h1 {
                         padding-top: 5px;
                         font-size: 26px;
@@ -1346,6 +1355,7 @@
                         letter-spacing: 0em;
                         text-align: left;            
                         color: var(--primary);
+                        padding-bottom: 10px;
                     }    
                     .iso {
                         margin: 10px 0;
