@@ -122,6 +122,12 @@ footer {
                 .box {
                     width: 80%;
                     margin: 0 0 0 auto;
+                    position: relative;
+                    .mosca {
+                        position: absolute;
+                        right: 0;
+                        top: -18px;                        
+                    }
                     .encabezado {
                         font-size: 30px;
                         font-weight: 700;
