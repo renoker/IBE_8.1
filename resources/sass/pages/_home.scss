@@ -99,61 +99,7 @@
                 width: 205px;
             }            
         }
-    }    
-    .content_certificaciones {
-        width: 100%;
-        @include flex(flex, space-between, center, 0);
-        .slider {
-            width: 550px;
-            .h1_h {
-                font-size: 72px;
-                font-weight: 700;
-                line-height: 72px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: var(--primary);
-            }    
-            .iso {
-                margin: 10px 0;
-                width: 157px;
-                height: 45px;
-                border-radius: 15px;           
-                background: #00567E1A;        
-                @include flex(flex, flex-start, center, 0);      
-                p {
-                    font-size: 30px;
-                    font-weight: 700;
-                    line-height: 30px;
-                    letter-spacing: 0em;
-                    text-align: center;
-                    color: var(--primary);     
-                    padding-left: 5px;       
-                }
-            }            
-            .txt_slider {                
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 21px;
-                letter-spacing: 0em;
-                text-align: left;                  
-                color: var(--primary);            
-                span {
-                    font-size: 18px;
-                    font-weight: 700;
-                    line-height: 21px;
-                    letter-spacing: 0em;
-                    text-align: left;             
-                    color: var(--primary);                   
-                }
-            }
-        }
-        .sellos {
-            @include flex(flex, space-between, center, 25px);
-            .img_sello {
-                width: 229px;
-            }
-        }
-    }      
+    }         
 }
 
 .box_imagenes {
@@ -168,6 +114,15 @@
         border: 1px solid var(--blanco);
         overflow: hidden;
         .zoom {
+            &.scale_1 {
+                scale: 1.2;
+            }
+            &.scale_2 {
+                scale: 2.9;
+            }   
+            &.soldador {
+                padding-top: 31px;
+            }                        
             &:hover {
                 transform: scale(1.2);
             }
@@ -189,7 +144,7 @@
             text-align: center;   
             .img {
                 width: fit-content;
-                padding-bottom: 8rem;
+                padding-bottom: 2rem;
             }      
             .img_1 {
                 width: fit-content;
@@ -214,7 +169,7 @@
             text-align: center;   
             .img {
                 width: fit-content;
-                padding-bottom: 7rem;
+                padding-bottom: 2rem;
             }      
             .img_1 {
                 width: fit-content;
@@ -2002,3 +1957,63 @@
       }
     }
   }
+
+
+  .content_certificaciones {
+    width: $width-general;
+    margin: 0 auto;
+    @include flex(flex, space-between, center, 0);
+    &.mt-nosotros {
+        margin-top: 8rem;
+    }
+    .slider {
+        width: 550px;
+        .h1_h {
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--primary);
+        }    
+        .iso {
+            margin: 10px 0;
+            width: 157px;
+            height: 45px;
+            border-radius: 15px;           
+            background: #00567E1A;        
+            @include flex(flex, flex-start, center, 0);      
+            p {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: var(--primary);     
+                padding-left: 5px;       
+            }
+        }            
+        .txt_slider {                
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;                  
+            color: var(--primary);            
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;             
+                color: var(--primary);                   
+            }
+        }
+    }
+    .sellos {
+        @include flex(flex, space-between, center, 25px);
+        .img_sello {
+            width: 170px;
+        }
+    }
+} 

@@ -92,6 +92,7 @@
                     <div class="sellos">
                         <img src="{{ url('images/s_2.png') }}" class="img_sello" alt="">
                         <img src="{{ url('images/s_1.png') }}" class="img_sello" alt="">
+                        <img src="{{ url('images/iso_9001.png') }}" class="img_sello" alt="">
                     </div>
                 </div>
             </div>

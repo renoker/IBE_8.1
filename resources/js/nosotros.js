@@ -9,5 +9,5 @@ new Splide('#certificaciones', {
 new Splide('#certificaciones_cuentas', {
     arrows: false,
     type: 'loop',
-    autoplay: true,
+    autoplay: false,
 }).mount();
