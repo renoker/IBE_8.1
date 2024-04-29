@@ -18,49 +18,11 @@
                 </div>
             </div>
         </div>
-        <div class="content_logo_catalogo">
-            <img src="{{ url('images/proline_2.png') }}" class="poline_2" alt="">
-        </div>
         {{-- Categoria --}}
         <div class="conteiner_categoria">
-            <h1 class="h1_categoria">{{ __('Categories') }}</h1>
-            <ul class="ul_cat">
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Hoppers') }}</p>
-                    </div>
-                </li>
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Conveyors') }}</p>
-                    </div>
-                </li>
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Turners') }}</p>
-                    </div>
-                </li>
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Extractors') }}</p>
-                    </div>
-                </li>
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Tables') }}</p>
-                    </div>
-                </li>
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Bombs') }}</p>
-                    </div>
-                </li>
-                <li class="li">
-                    <div class="cat">
-                        <p class="p">{{ __('Others') }}</p>
-                    </div>
-                </li>
-            </ul>
+            <div class="content_logo_catalogo">
+                <img src="{{ url('images/proline_2.png') }}" class="poline_2" alt="">
+            </div>
             {{-- Listado de maquinas --}}
             <div class="container_maquinas">
                 <div class="int">
