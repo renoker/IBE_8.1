@@ -3,8 +3,7 @@
 @section('boby', 'main_body')
 @section('content')
     <div class="conten_padre">
-        <div class="banner_general">
-            <img src="{{ url('images/nosotros.jpg') }}" class="img_banner" alt="">
+        <div class="banner_general_nosotros">
             <div class="content_inter_banner">
                 <div class="part_one">
                     <h1 class="encabezado">{{ __('Us') }}</h1>
