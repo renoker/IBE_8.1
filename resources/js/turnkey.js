@@ -5,7 +5,7 @@ new Splide('#barra_1', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_2', {
@@ -13,7 +13,7 @@ new Splide('#barra_2', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_3', {
@@ -21,7 +21,7 @@ new Splide('#barra_3', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_4', {
@@ -29,7 +29,7 @@ new Splide('#barra_4', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_5', {
@@ -37,7 +37,7 @@ new Splide('#barra_5', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_6', {
@@ -45,7 +45,7 @@ new Splide('#barra_6', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_7', {
@@ -53,7 +53,7 @@ new Splide('#barra_7', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
+    autoplay: false,
 }).mount();
 
 new Splide('#barra_8', {
@@ -61,11 +61,5 @@ new Splide('#barra_8', {
     rewind    : true,
     pagination: false,
     arrows    : false,
-    autoplay: true,
-}).mount();
-
-new Splide('#certificaciones', {
-    arrows: false,
-    type: 'loop',
-    autoplay: true,
+    autoplay: false,
 }).mount();

@@ -543,6 +543,18 @@
             .part_two {
                 width: 344.79px;
                 height: 216px;
+                overflow: hidden;
+                &.l {
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;                    
+                }
+                &.r {
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;        
+                    img {
+                        height: 216px;
+                    }            
+                }                
                 img {
                     width: fit-content;
                 }
@@ -550,6 +562,19 @@
             .part_two_slider {
                 display: none;
                 width: fit-content;
+                height: 500px;
+                overflow: hidden;  
+                &.l {
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;                    
+                }  
+                &.r {
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;    
+                    img {
+                        height: 500px;
+                    }                
+                }                                                              
             }
 
             &:hover {
@@ -1956,7 +1981,58 @@
         text-align: right;
       }
     }
-  }
+}
+
+.banner_general_turnkey {
+    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/turnkey_portada.jpg);
+    /* Set a specific height */
+    min-height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    @include flex(flex, center, center, 0);      
+    .content_inter_banner {
+      width: 90%;  
+      max-width: $width-general;    
+      position: absolute;
+      @include flex(flex, space-between, center, 0);      
+      .part_one {
+        width: 65%;
+        .encabezado {
+          font-size: 68px;
+          font-weight: 700;
+          line-height: 68px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: var(--blanco);
+        }
+        .pro_line {
+          padding-top: 5px;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: var(--blanco);  
+        }
+        .text {
+          padding-top: 2rem;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: var(--blanco);
+        }
+      }
+      .part_two {
+        width: 30%;
+        text-align: right;
+      }
+    }
+}
 
 
   .content_certificaciones {
