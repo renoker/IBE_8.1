@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('images/PROLINE.png') }}" alt="">
+                    <img src="{{ url('images/IBE-Imagotipo_07.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -29,7 +29,11 @@
                     @foreach ($maquinas as $item)
                         <div class="box_maquina">
                             <div class="box_imagen_maquina">
-                                <img src="{{ url($item->image) }}" class="maquina" alt="">
+                                @if ($item->id == 22)
+                                    <img src="{{ url($item->image) }}" class="maquina_alta" alt="">
+                                @else
+                                    <img src="{{ url($item->image) }}" class="maquina" alt="">
+                                @endif
                                 <img src="{{ url($item->logo_servicio) }}" class="ser" alt="">
                             </div>
                             <h1 class="h1">{{ $item->name }}</h1>

@@ -1339,12 +1339,15 @@
                         -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);                 
                     }         
                     .box_imagen_maquina {
-                        @include flex(flex, space-between, center, 0);  
+                        @include flex(flex, center, center, 0);  
                         .maquina {
                             width: 90%;
                         }
+                        .maquina_alta {
+                            width: 40%;
+                        }                        
                         .ser {
-                            width: 17px;
+                            width: 25px;
                         }
                     }             
                     .h1 {
@@ -1990,7 +1993,7 @@
 }
 
 .banner_general_turnkey {
-    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/turnkey_portada.jpg);
+    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../public/images/turnkey_portada.jpg);
     /* Set a specific height */
     min-height: 400px;
     /* Create the parallax scrolling effect */

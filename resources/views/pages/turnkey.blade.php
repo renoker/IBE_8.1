@@ -12,7 +12,7 @@
                     </p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('images/Sello.png') }}" alt="">
+                    <img src="{{ url('images/IBE-Imagotipo_07.png') }}" alt="">
                 </div>
             </div>
         </div>
