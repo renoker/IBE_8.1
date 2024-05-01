@@ -64,32 +64,30 @@
                 </div>
             </div>
         </div>
-        <div class="box_general mt-4">
-            <h1 class="h1">{{ __('Certifications') }}</h1>
-            <div class="content_slider">
-                <div class="slider">
-                    <section class="splide" id="certificaciones" aria-label="Certificaciones">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <p class="txt_slider">
-                                        {{ __('Our ISO 9001:2015 certification reinforces and ensures the quality of the services and products that we offer to our interested parties, complying with each of the highest quality standards of each of our processes.') }}
-                                    </p>
-                                </li>
-                                <li class="splide__slide">
-                                    <p class="txt_slider">
-                                        {{ __('We have an IQNET certificate related to the largest, most credible and reliable certification network in the world and will have your data present in the international database of certified companies evaluated as world-renowned suppliers.') }}
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+        <div class="content_certificaciones mt-detalle">
+            <div class="slider">
+                <h1 class="h1_h">{{ __('Certifications') }}</h1>
+                <div class="iso">
+                    <p>ISO9001</p>
                 </div>
-                <div class="sellos">
-                    <img src="{{ url('images/sello_1.png') }}" class="img_sello" alt="">
-                    <img src="{{ url('images/sello_2.png') }}" class="img_sello" alt="">
-                    <img src="{{ url('images/iso_9001.png') }}" class="img_sello_2" alt="">
-                </div>
+                <p class="txt_slider">
+                    {!! htmlspecialchars_decode(
+                        __(
+                            'It requires that our manufacturing meet the <span>highest quality and safety standards</span> to guarantee and ensure each of the processes in your plant.',
+                        ),
+                    ) !!}
+                </p>
+                <a href="">
+                    <div class="href">
+                        <p class="p">{{ __('Know more') }}</p>
+                        <x-icons.arrowDerecha />
+                    </div>
+                </a>
+            </div>
+            <div class="sellos">
+                <img src="{{ url('images/s_2.png') }}" class="img_sello" alt="">
+                <img src="{{ url('images/s_1.png') }}" class="img_sello" alt="">
+                <img src="{{ url('images/iso_9001.png') }}" class="img_sello" alt="">
             </div>
         </div>
         {{-- Categoria --}}

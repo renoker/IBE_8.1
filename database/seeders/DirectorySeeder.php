@@ -52,7 +52,7 @@ class DirectorySeeder extends Seeder
         Directory::create([
             'categorie_id'  => 1,
             'logo_servicio'     => 'images/logos/6.png',
-            'image'             => 'images/maquinas/4.png',
+            'image'             => 'images/maquinas/3.png',
             'model'             => '(PRO-CUB)',
             'name_es'           => 'Banda de deshuesado y despulpado',
             'fabricacion_es'    => 'Acero inoxidable 304.',
@@ -70,7 +70,7 @@ class DirectorySeeder extends Seeder
         Directory::create([
             'categorie_id'  => 1,
             'logo_servicio'     => 'images/logos/7.png',
-            'image'             => 'images/maquinas/3.png',
+            'image'             => 'images/maquinas/4.png',
             'model'             => '(PRO-CUB)',
             'name_es'           => 'Cortadora de mitades',
             'fabricacion_es'    => 'Acero inoxidable 304.',
