@@ -238,21 +238,16 @@
                             ) !!}</p>
                         </div>
                     </div>
-                    <div class="part_two">
-                        <img src="{{ url('images/barra_1.png') }}" alt="">
+                    <div class="part_two r_a">
+                        <img src="{{ url('images/distribucion_planta/distr.png') }}" alt="">
                     </div>
                     <div class="part_two_slider r">
                         <section class="splide" id="barra_5" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="{{ url('images/slider_b_1.jpg') }}" class="img_slid" alt="">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="{{ url('images/slider_b_2.jpg') }}" class="img_slid" alt="">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="{{ url('images/slider_b_3.jpg') }}" class="img_slid" alt="">
+                                        <img src="{{ url('images/distribucion_planta/distr.png') }}" class="img_slid"
+                                            alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -290,41 +285,18 @@
                 <div class="item_barra mt-10">
                     <div class="part_one r">
                         <div class="box_img">
-                            <img src="{{ url('images/icon_b_7.png') }}" alt="">
+                            <img src="{{ url('images/icon_b_8.png') }}" alt="">
                         </div>
                         <div class="box_info">
-                            <h1 class="h1">{!! htmlspecialchars_decode(__('Commissioning')) !!}</h1>
-                            <p class="p">{!! htmlspecialchars_decode(__('Mechanical, pneumatic, electrical and control operation tests.')) !!}</p>
+                            <h1 class="h1">{{ __('Personnel Training') }}</h1>
+                            <p class="p">{!! htmlspecialchars_decode(__('We provide the training to be able to operate your plant without any problem.')) !!}</p>
                         </div>
                     </div>
-                    <div class="part_two">
-                        <img src="{{ url('images/barra_7.png') }}" alt="">
+                    <div class="part_two r_a">
+                        <img src="{{ url('images/capacitacion_personal/portada.jpg') }}" alt="">
                     </div>
                     <div class="part_two_slider r">
                         <section class="splide" id="barra_7" aria-labelledby="carousel-heading">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <img src="{{ url('images/slider_e_7.png') }}" class="img_slid" alt="">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="{{ url('images/slider_b_2.jpg') }}" class="img_slid" alt="">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="{{ url('images/slider_b_3.jpg') }}" class="img_slid" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                {{-- Slider OCHO --}}
-                <div class="item_barra mt-10">
-                    <div class="part_two l">
-                        <img src="{{ url('images/capacitacion_personal/portada.jpg') }}" alt="">
-                    </div>
-                    <div class="part_two_slider l">
-                        <section class="splide" id="barra_8" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
@@ -335,16 +307,8 @@
                             </div>
                         </section>
                     </div>
-                    <div class="part_one_r">
-                        <div class="box_info">
-                            <h1 class="h1">{{ __('Personnel Training') }}</h1>
-                            <p class="p">{!! htmlspecialchars_decode(__('We provide the training to be able to operate your plant without any problem.')) !!}</p>
-                        </div>
-                        <div class="box_img">
-                            <img src="{{ url('images/icon_b_8.png') }}" alt="">
-                        </div>
-                    </div>
                 </div>
+
             </div>
             {{-- Nuestros Valores --}}
             <div class="content_certificaciones mt-nosotros">

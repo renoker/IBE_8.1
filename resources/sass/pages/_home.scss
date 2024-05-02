@@ -554,7 +554,11 @@
                     img {
                         height: 216px;
                     }            
-                }                
+                }
+                &.r_a {
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;                   
+                }                                
                 img {
                     width: fit-content;
                 }
