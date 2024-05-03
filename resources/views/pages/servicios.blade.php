@@ -4,10 +4,10 @@
 @section('content')
     <div class="content_padre_servicios">
         {{-- Envabezado y Logo --}}
-        <div class="encabe">
-            <img src="{{ url('images/logo_servicios.png') }}" class="logo_serv" alt="">
-            <h1 class="h1_encabezado">{!! htmlspecialchars_decode(__('Electrical <br> services')) !!}</h1>
+        <div class="video_servicios">
+            <video src="{{ url('videos/2.mp4') }}" autoplay loop></video>
         </div>
+        <div class="espaciador"></div>
         {{-- Slider --}}
         <div class="content_servicios_slider_top">
             <div class="content_inter_banner">
@@ -109,287 +109,155 @@
         <div class="espaciador"></div>
         {{-- Bloques informativos --}}
         <div class="contenedor_background_servicios">
-
             <section class="splide" id="servicios_cumplidos" aria-label="">
                 <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/1.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Medium voltage electrical installation') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'These have a voltage between 1 to 36 Kv. Which circulates through the distribution lines and leads to the electrical transformation centers. This type of electrical installation is characterized by allowing electrical energy to be transformed into low voltage for consumption by the end user.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                    @if ($language == 'es')
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/3.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/2.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Pre-assembled substations') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'We manufacture pre-assembled E-house class 12.25 and 34.5 KV substations. They are ideal for use in situations where temporary solutions are needed or in hard-to-reach places.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/5.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/3.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Installation of electrical substations') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Installation of 15.25 and 34.5 KV fixed substations intended to establish the appropriate voltage levels to produce, convert, regulate and distribute electrical energy.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/7.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/4.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Low voltage electrical installation') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Low voltage industrial electrical installations carried out with strict adherence to the NOM –SEDE-001 2012 low voltage standard, power circuits, lighting and contacts, lightning rod installations and physical grounds, etc.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/9.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/5.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('CCM boards') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Manufacturing and integration of CCM boards (motor control centers), troubleshooting, explosion proof boards, Manufacture of NEMA 4R stainless steel panels.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/11.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/6.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Capacitor banks') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __('Design and manufacture of capacitor banks for electrical systems for low power factor correction.'),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/13.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/7.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Harmonic filters') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Installation of passive and active harmonic filters, these correct the deformations produced in the current or voltage wave as a consequence of the presence of non-linear loads, that is, loads that contain rectifiers such as inverters, variable speed drives, induction furnaces , etc.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/15.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/8.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Emergency plants') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Supply and installation of emergency plants of up to 3,250 kW, the most reliable solution in the event of possible power outages, since they reactivate the system in a matter of seconds and prevent the servers from turning off.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/17.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/9.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Fire protection system') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Installation of fire-fighting pipes and accessories: measures and safety plan that any building must have to know how to act and minimize the effects of fire in the event that there is a fire in the area.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/19.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/10.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Installation of pneumatic systems') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Installation of compressor room, lung and dryer: Ideal for distributing compressed air to tools, assembly machinery, cleaning systems, and more.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/21.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/11.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('Atmospheric protection system') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'Atmospheric protection system: it is a complete and integral installation designed to reduce lightning damage due to direct and indirect impacts on the facilities to be protected.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/23.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/11.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('CCTV surveillance systems') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(__('Supply and installation of video surveillance equipment.')) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/25.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/12.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('NETWORK CODE Compliance') }}</h1>
-                                        <p class="parrafo pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    'With the new energy reform, a new regulation issued by the energy regulatory commission appeared. The network code considers efficiency, quality, reliability, safety and sustainability, which commits the Medium and high consumption centers are required to comply with the standards in proportion to their equipment and facilities. <span>¡We help you achieve it!</span>',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                        <p class="parrafo_s pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    '• Quality study: Which allows identifying power quality problems, such as voltage drops, harmonics, surges and fluctuations',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                        <p class="parrafo_s pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    '• Updating or creating a single-line diagram: It is the plan that allows us to become completely familiar with the design and layout of the electrical distribution system in your facilities.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/27.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/12.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('NETWORK CODE Compliance') }}</h1>
-                                        <p class="parrafo_s pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    '• Calculation of short circuit in substation and derivatives: based on the calculation or determination of the magnitudes of the fault currents and the contributions of each of the elements to this fault.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                        <p class="parrafo_s pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    '• Correction or installation of protection systems against atmospheric discharges: provides protection to a structure against physical damage and injuries to living beings due to touch voltages and step voltages.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/es/29.mp4') }}"></video>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="box_parallax">
-                                <div class="box">
-                                    <img src="{{ url('images/servicios/12.png') }}" alt="">
-                                    <div>
-                                        <h1 class="h1">{{ __('NETWORK CODE Compliance') }}</h1>
-                                        <p class="parrafo_s pb">
-                                            {!! htmlspecialchars_decode(
-                                                __('• Harmonic distortion review, physical ground studies: It is a way to measure the quality of the power supply'),
-                                            ) !!}
-                                        </p>
-                                        <p class="parrafo_s pb">
-                                            {!! htmlspecialchars_decode(
-                                                __(
-                                                    '• Manufacture and installation of capacitor banks with or without harmonic filters: <br> Your best alternative to save electrical energy! <br> Its benefits are: <br> <br>Power factor compensation <br> Energy savings and loss reduction <br> Increased load capacity <br> Improved voltage stability <br> Reduction of penalties for low power factor.',
-                                                ),
-                                            ) !!}
-                                        </p>
-                                    </div>
-
+                            </li>
+                        </ul>
+                    @else
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/4.mp4') }}" autoplay></video>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/6.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/8.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/10.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/12.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/14.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/16.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/18.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/20.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/22.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/24.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/26.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/28.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <video src="{{ url('videos/en/30.mp4') }}" autoplay></video>
+                                </div>
+                            </li>
+                        </ul>
+                    @endif
                 </div>
             </section>
         </div>

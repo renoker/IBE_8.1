@@ -138,7 +138,7 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="{{ url('images/disenio_fabricacion/zoom_1.jpg') }}" class="img_slid"
+                                        <img src="{{ url('images/disenio_fabricacion/soldador_2.jpeg') }}" class="img_slid"
                                             alt="">
                                     </li>
                                     <li class="splide__slide">

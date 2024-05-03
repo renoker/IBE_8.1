@@ -3,14 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class ServiciosController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($language = null)
     {
-        return view('pages.servicios');
+        if ($language == null) {
+            $language = App::getLocale();
+        }
+
+        return view('pages.servicios', [
+            "language"   => $language
+        ]);
     }
 }

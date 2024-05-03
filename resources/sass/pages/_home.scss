@@ -1733,86 +1733,99 @@
         }        
     }
 
+    // .contenedor_background_servicios {
+    //     background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/servicios_portada.jpeg);
+    //     background-attachment: fixed;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;     
+    //     .box_parallax {
+    //         width: 100%;
+    //         .box {
+    //             width: $width-general;
+    //             margin: 0 auto;
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+    //             .h1 {
+    //                 font-size: 38px;
+    //                 font-weight: 700;
+    //                 line-height: 49.93px;
+    //                 text-align: left;
+    //                 color: var(--blanco);     
+    //                 padding-bottom: 16px;
+    //             }
+    //             .parrafo {
+    //                 font-size: 16px;
+    //                 font-weight: 400;
+    //                 line-height: 19.2px;
+    //                 text-align: left;  
+    //                 color: var(--blanco); 
+    //                 &.pb {
+    //                     padding-bottom: 10px;   
+    //                 }              
+    //                 span {
+    //                     font-size: 16px;
+    //                     font-weight: 700;
+    //                     line-height: 19.2px;
+    //                     text-align: left; 
+    //                     color: var(--blanco);                                            
+    //                 }
+    //             } 
+    //             .parrafo_s {
+    //                 font-size: 20px;
+    //                 font-weight: 400;
+    //                 line-height: 25px;
+    //                 text-align: left;  
+    //                 color: var(--blanco); 
+    //                 &.pb {
+    //                     padding-bottom: 15px;   
+    //                 }              
+    //                 span {
+    //                     font-size: 16px;
+    //                     font-weight: 700;
+    //                     line-height: 19.2px;
+    //                     text-align: left; 
+    //                     color: var(--blanco);                                            
+    //                 }
+    //             }                 
+    //             .bx {
+    //                 width: 100%;
+    //                 @include flex(flex, flex-start, flex-start, 10px);  
+    //                 .parrafo {
+    //                     font-size: 16px;
+    //                     font-weight: 400;
+    //                     line-height: 19.2px;
+    //                     text-align: left;  
+    //                     color: var(--blanco); 
+    //                     &.pb {
+    //                         padding-bottom: 10px;   
+    //                     }              
+    //                     span {
+    //                         font-size: 16px;
+    //                         font-weight: 700;
+    //                         line-height: 19.2px;
+    //                         text-align: left; 
+    //                         color: var(--blanco);                                            
+    //                     }
+    //                 }                    
+    //             }
+    //         }
+    //     }
+    // }    
+    
+
     .contenedor_background_servicios {
-        background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/servicios_portada.jpeg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;     
+        width: 100%;
         .box_parallax {
             width: 100%;
-            .box {
-                width: $width-general;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .h1 {
-                    font-size: 38px;
-                    font-weight: 700;
-                    line-height: 49.93px;
-                    text-align: left;
-                    color: var(--blanco);     
-                    padding-bottom: 16px;
-                }
-                .parrafo {
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 19.2px;
-                    text-align: left;  
-                    color: var(--blanco); 
-                    &.pb {
-                        padding-bottom: 10px;   
-                    }              
-                    span {
-                        font-size: 16px;
-                        font-weight: 700;
-                        line-height: 19.2px;
-                        text-align: left; 
-                        color: var(--blanco);                                            
-                    }
-                } 
-                .parrafo_s {
-                    font-size: 20px;
-                    font-weight: 400;
-                    line-height: 25px;
-                    text-align: left;  
-                    color: var(--blanco); 
-                    &.pb {
-                        padding-bottom: 15px;   
-                    }              
-                    span {
-                        font-size: 16px;
-                        font-weight: 700;
-                        line-height: 19.2px;
-                        text-align: left; 
-                        color: var(--blanco);                                            
-                    }
-                }                 
-                .bx {
-                    width: 100%;
-                    @include flex(flex, flex-start, flex-start, 10px);  
-                    .parrafo {
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 19.2px;
-                        text-align: left;  
-                        color: var(--blanco); 
-                        &.pb {
-                            padding-bottom: 10px;   
-                        }              
-                        span {
-                            font-size: 16px;
-                            font-weight: 700;
-                            line-height: 19.2px;
-                            text-align: left; 
-                            color: var(--blanco);                                            
-                        }
-                    }                    
-                }
+            video {
+                width: 100%;
             }
         }
-    }     
+    }
+    
+
     .content_nuestros_clientes {
         width: $width-general;
         margin: 4rem auto 8rem auto;
@@ -1946,7 +1959,7 @@
 
 
 .banner_general_nosotros {
-    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/nosotros_portada.jpg);
+    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/nosotros_portada_2.jpeg);
     /* Set a specific height */
     min-height: 400px;
     /* Create the parallax scrolling effect */
@@ -2109,3 +2122,10 @@
         }
     }
 } 
+
+.video_servicios {
+    width: 100%;
+    video {
+        width: 100%;
+    }
+}

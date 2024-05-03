@@ -89,7 +89,7 @@
             <img src="{{ url('images/3.jpg') }}" class="zoom scale_1 soldador" alt="">
         </div>
         <div class="content_imagen_zoom">
-            <img src="{{ url('images/4.jpg') }}" class="zoom scale_2" alt="">
+            <img src="{{ url('images/op_4.jpeg') }}" class="zoom scale_2" alt="">
         </div>
     </div>
     {{-- Certificaciones slider --}}
