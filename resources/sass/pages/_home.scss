@@ -1818,7 +1818,8 @@
     .contenedor_background_servicios {
         width: 100%;
         .box_parallax {
-            width: 100%;
+            width: $width-general;  
+            margin: 0 auto;
             video {
                 width: 100%;
             }
@@ -1843,7 +1844,6 @@
 // Contacto
 .content_padre_contacto {
     width: 100%;
-    background-color: var(--blanco);
     .banner {
         width: 100%;
         margin: 2rem 0 6rem 0;

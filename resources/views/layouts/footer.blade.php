@@ -22,9 +22,9 @@
                         <div class="item">
                             <img src="{{ url('images/tel.png') }}" class="icon" alt="">
                             <div class="list">
-                                <p>452-524-6479</p>
-                                <p>452-340-5913</p>
-                                <p>452-182-0611 </p>
+                                <p>+52 452-524-6479</p>
+                                <p>+52 452-340-5913</p>
+                                <p>+52 452-182-0611 </p>
                             </div>
                         </div>
                         <div class="item-email">
