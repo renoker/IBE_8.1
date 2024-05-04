@@ -5,7 +5,7 @@
     <div class="content_padre_servicios">
         {{-- Envabezado y Logo --}}
         <div class="video_servicios">
-            <video src="{{ url('videos/2.mp4') }}" autoplay loop></video>
+            <img src="{{ url('images/servicios.png') }}" class="img" alt="">
         </div>
         <div class="espaciador"></div>
         {{-- Slider --}}
@@ -115,72 +115,72 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/3.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/3.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/5.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/5.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/7.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/7.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/9.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/9.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/11.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/11.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/13.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/13.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/15.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/15.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/17.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/17.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/19.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/19.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/21.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/21.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/23.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/23.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/25.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/25.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/27.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/27.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/29.mp4') }}"></video>
+                                    <video src="{{ url('videos/es/29.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                         </ul>
@@ -188,72 +188,72 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/4.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/4.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/6.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/6.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/8.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/8.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/10.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/10.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/12.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/12.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/14.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/14.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/16.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/16.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/18.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/18.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/20.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/20.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/22.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/22.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/24.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/24.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/26.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/26.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/28.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/28.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/30.mp4') }}" autoplay></video>
+                                    <video src="{{ url('videos/en/30.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                         </ul>
