@@ -228,7 +228,7 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/20.mp4') }}" autoplay preload loop="true"></video>
+                                    <img src="{{ url('videos/en/20_imagen.png') }}" style="width: 100%" alt="">
                                 </div>
                             </li>
                             <li class="splide__slide">
