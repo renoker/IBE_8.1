@@ -3,7 +3,20 @@
 @section('boby', 'main_body')
 @section('content')
     <div class="content_padre_catalogo">
-        <div class="banner_general">
+        <div class="content_banner_slider_catalogo">
+            <div class="opa"></div>
+            <video src="{{ url('videos/catalogo.mp4') }}" autoplay loop class="img_banner"></video>
+            <div class="content_inter_banner">
+                <div class="part_one">
+                    <h1 class="encabezado">{{ __('Our catalog') }}</h1>
+                    <p class="pro_line">Pro line process</p>
+                    <p class="text">
+                        {{ __('At IBE SOLUTIONS we offer the design and development service of equipment for any industrial sector and food grade. We have an extensive catalog of products, however, in our company we have the scope to make personalized designs based on the needs and expectations of our interested parties.') }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{-- <div class="banner_general">
             <img src="{{ url('images/nosotros.jpg') }}" class="img_banner" alt="">
             <div class="content_inter_banner">
                 <div class="part_one">
@@ -17,12 +30,9 @@
                     <img src="{{ url('images/IBE-Imagotipo_07.png') }}" alt="">
                 </div>
             </div>
-        </div>
+        </div> --}}
         {{-- Categoria --}}
         <div class="conteiner_categoria">
-            <div class="content_logo_catalogo">
-                <img src="{{ url('images/proline_2.png') }}" class="poline_2" alt="">
-            </div>
             {{-- Listado de maquinas --}}
             <div class="container_maquinas">
                 <div class="int">
