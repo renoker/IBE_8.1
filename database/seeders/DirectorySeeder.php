@@ -391,23 +391,23 @@ class DirectorySeeder extends Seeder
             'order'             =>  21,
         ]);
 
-        Directory::create([
-            'categorie_id'  => 1,
-            'logo_servicio'     => 'images/logos/25.png',
-            'image'             => 'images/maquinas/22.png',
-            'model'             => '(PRO-CUB)',
-            'name_es'           => 'Llenadora vertical',
-            'fabricacion_es'    => 'Acero inoxidable 304.',
-            'capacidad_es'      => 'De acuerdo a las necesidades del cliente.',
-            'componentes_es'    => 'Acero inoxidable grado alimenticio, unidades de mantenimiento neumáticos, actuadores neumáticos y tubing acorde a las necesidades.',
-            'objetivo_es'       => 'Este equipo realiza un llenado automático para que el proceso sea más rápido y eficiente por medio de tolva dosificadora y sensores, con esto asegurando el llenado deseado.',
-            'name_en'           => 'Vertical filling machine',
-            'fabricacion_en'    => 'Stainless steel 304.',
-            'capacidad_en'      => "According to the client's needs.",
-            'componentes_en'    => 'Food grade stainless steel, units of pneumatic maintenance, actuators tires and tubing according to needs.',
-            'objetivo_en'       => 'This equipment performs automatic filling to make the process faster and more efficient by means of a dosing hopper and sensors, thus ensuring the desired filling.',
-            'order'             =>  22,
-        ]);
+        // Directory::create([
+        //     'categorie_id'  => 1,
+        //     'logo_servicio'     => 'images/logos/25.png',
+        //     'image'             => 'images/maquinas/22.png',
+        //     'model'             => '(PRO-CUB)',
+        //     'name_es'           => 'Llenadora vertical',
+        //     'fabricacion_es'    => 'Acero inoxidable 304.',
+        //     'capacidad_es'      => 'De acuerdo a las necesidades del cliente.',
+        //     'componentes_es'    => 'Acero inoxidable grado alimenticio, unidades de mantenimiento neumáticos, actuadores neumáticos y tubing acorde a las necesidades.',
+        //     'objetivo_es'       => 'Este equipo realiza un llenado automático para que el proceso sea más rápido y eficiente por medio de tolva dosificadora y sensores, con esto asegurando el llenado deseado.',
+        //     'name_en'           => 'Vertical filling machine',
+        //     'fabricacion_en'    => 'Stainless steel 304.',
+        //     'capacidad_en'      => "According to the client's needs.",
+        //     'componentes_en'    => 'Food grade stainless steel, units of pneumatic maintenance, actuators tires and tubing according to needs.',
+        //     'objetivo_en'       => 'This equipment performs automatic filling to make the process faster and more efficient by means of a dosing hopper and sensors, thus ensuring the desired filling.',
+        //     'order'             =>  22,
+        // ]);
 
         Directory::create([
             'categorie_id'  => 1,

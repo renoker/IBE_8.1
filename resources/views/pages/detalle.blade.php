@@ -95,12 +95,6 @@
             <div class="conteiner_detalle_categoria">
                 <div class="left">
                     <h1 class="h1">{{ $row->name }}</h1>
-                    <div class="box_model">
-                        <h6 class="h6">{{ __('Model:') }}</h6>
-                        <div class="iso">
-                            <p>{{ $row->model }}</p>
-                        </div>
-                    </div>
                     <h1 class="encabezado">{{ __('Specifications') }}</h1>
                     <h6 class="h6_g">{{ __('Manufacturing:') }}</h6>
                     <p class="parrafo">{{ $row->fabricacion }}</p>

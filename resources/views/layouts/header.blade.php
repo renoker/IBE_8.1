@@ -64,11 +64,11 @@
             <li>
                 <div class="idioma_header">
                     <a href="{{ route('set_language', ['es']) }}">
-                        <p class="txt_idioma">Es</p>
+                        <img src="{{ url('images/mexico.png') }}" class="icon_flag" alt="">
                     </a>
                     <p class="txt_idioma">|</p>
                     <a href="{{ route('set_language', ['en']) }}">
-                        <p class="txt_idioma">En</p>
+                        <img src="{{ url('images/usa.png') }}" class="icon_flag" alt="">
                     </a>
                 </div>
             </li>
