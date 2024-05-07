@@ -9,102 +9,39 @@
         </div>
         <div class="espaciador"></div>
         {{-- Slider --}}
-        <div class="content_servicios_slider_top">
-            <div class="content_inter_banner">
-                <div class="part_one">
-                    <section class="splide" id="principal" aria-label="">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">{{ __('Machinery manufacturing') }}</h1>
-                                            <p class="text">
-                                                {{ __('Manufacture of specialized machinery in the agro-industrial sector, food grade integrating each of our specialties, always taking care of compliance with the best quality, safety, ergonomics and easy assembly.') }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">{{ __('Manufacture of parts in series') }}</h1>
-                                            <p class="text">
-                                                {{ __('We produce serial parts made with high precision laser cutting in steel and aluminum.') }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">{{ __('Online designs') }}</h1>
-                                            <p class="text">
-                                                {{ __('Line machinery, designed under the highest quality standards, compliance with safety standards, ergonomics, especially with an approach based on greater productivity and use of each process.') }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">{{ __('Custom designs') }}</h1>
-                                            <p class="text">
-                                                {{ __("Development of specific personalized designs based on the fulfillment of our clients' objectives, under compliance with the same quality standards.") }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">{{ __('Control boards') }}</h1>
-                                            <p class="text">
-                                                {{ __('Manufacture, supply and installation of control panels or motor centers, mainly used to control and monitor the different parameters of the motor-generator in addition to controlling its operation, thereby being able to integrate each of the compositions of the line and with achieve the greatest effectiveness in each of its stages.') }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">{{ __('Industrial automation') }}</h1>
-                                            <p class="text">
-                                                {{ __('Industrial automation allows greater precision and repeatability in tasks. This is because machines are able to perform tasks more quickly and efficiently, which Thanks to automation, companies can monitor and control all the parameters of their production processes, allowing them to detect and solve problems more easily.') }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div class="n">
-                                        <img src="{{ url('images/icon_home_iqnet.png') }}" class="logo" alt="">
-                                        <div class="bx">
-                                            <h1 class="encabezado">Refurbish</h1>
-                                            <p class="text">
-                                                {!! htmlspecialchars_decode(
-                                                    __(
-                                                        'Refurbishment of national and international equipment, incorporating each of our specialties: <br> Structural<br>Mechanical<br>Electrical<br>Automation and Control<br>Preventive and corrective malajemente service',
-                                                    ),
-                                                ) !!}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+        {{-- Bloques informativos --}}
+        <div class="contenedor_background_servicios">
+            <section class="splide" id="principal" aria-label="">
+                <div class="splide__track">
+                    @if ($language == 'es')
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <img src="{{ url('images/servicios/32.png') }}" style="width: 100%" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <img src="{{ url('images/servicios/33.png') }}" style="width: 100%" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    @else
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <img src="{{ url('images/servicios/32.png') }}" style="width: 100%" alt="">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="box_parallax">
+                                    <img src="{{ url('images/servicios/33.png') }}" style="width: 100%" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    @endif
                 </div>
-                <div class="part_two">
-                    <img src="{{ url('images/prew.png') }}" id="btnPrev" alt="">
-                    <img src="{{ url('images/next.png') }}" id="btnNext" alt="">
-                </div>
-            </div>
+            </section>
         </div>
         <div class="espaciador"></div>
         {{-- Bloques informativos --}}
