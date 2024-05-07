@@ -5,14 +5,14 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 new Splide('#principal', {
   arrows: false,
   type: 'loop',
-  autoplay: false,
+  autoplay: true,
 }).mount();
 
 
 new Splide('#servicios_cumplidos', {
   arrows: false,
   type: 'loop',
-  autoplay: false,
+  autoplay: true,
 }).mount();
 
 const clientes = new Splide( '#nuestros_clientes', {
