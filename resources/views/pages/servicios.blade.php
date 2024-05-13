@@ -107,7 +107,7 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/es/25.mp4') }}" autoplay preload loop="true"></video>
+                                    <video src="{{ url('videos/es/26.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">
@@ -180,7 +180,7 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="box_parallax">
-                                    <video src="{{ url('videos/en/26.mp4') }}" autoplay preload loop="true"></video>
+                                    <video src="{{ url('videos/en/25.mp4') }}" autoplay preload loop="true"></video>
                                 </div>
                             </li>
                             <li class="splide__slide">

@@ -51,7 +51,7 @@
                     <div class="mosca">
                         <a href="https://api.whatsapp.com/send?phone=+524523405913&text=Hola,%20necesito%20ayuda"
                             target="_blank">
-                            <img src="{{ url('images/Mosca.svg') }}" alt="">
+                            <img src="{{ url('images/Mosca.svg') }}" class="moscaIcon" alt="">
                         </a>
                     </div>
                     <h5 class="encabezado">{!! htmlspecialchars_decode(__('Contact Us')) !!}</h5>
