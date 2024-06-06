@@ -107,3 +107,117 @@
     }
     
 }
+
+// Responsive 
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+        height: 140px;
+        background-color: transparent;
+        @include flex(none, center, center, 0);
+        .header_box {
+            width: 100%;
+            background-color: var(--primary);
+            border-radius: 5px;
+            padding: 20px 0;
+            .ul {
+                width: 90%;
+                margin: 0 auto;
+                @include flex(flex, space-between, center, 0);            
+                li {
+                    .menu {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0em;          
+                        padding: 5px 10px;
+                        border: 1px solid  var(--primary);
+                        border-radius: 15px;
+                        color: var(--blanco);
+                        &:hover {
+                            border: 1px solid  var(--blanco);
+                            padding: 5px 10px;
+                            border-radius: 15px;
+                            color: var(--blanco);
+                        }
+                    }
+                    &.active {
+                        .menu {
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 26px;
+                            letter-spacing: 0em;                    
+                            border-radius: 15px;
+                            padding: 5px 10px;
+                            background-color: var(--blanco);  
+                            color: var(--primary); 
+                        }
+                    }                
+                    .logo {
+                        width: 113px;
+                        height: 39.06px;
+                        background-image: url(../../../images/IBE-Logotipo_10.png);
+                        cursor: pointer;
+                        &:hover {
+                            cursor: pointer;
+                            background-image: url(../../../images/IBE-Logotipo_06.png);
+                        }                   
+                    }
+                    &.relative_li {
+                        position: relative;
+                        .cnt_redes {
+                            position: absolute;
+                            background-color: var(--blanco);
+                            border-radius: 5px;
+                            z-index: 10;
+                            top: 40px;
+                            display: none;
+                            &.active {
+                                display: block;
+                            }
+                            .ul {
+                                padding: 15px 14px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 7px;
+                                align-items: flex-start;
+                                width: 115px;
+                                .red_social {
+                                    color: var(--primary);
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 20.48px;
+                                    text-align: left;      
+                                    &:hover {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        line-height: 25.6px;
+                                        text-align: left;   
+                                        color: var(--primary);                                 
+                                    }                          
+                                }
+                            }
+                        }
+                    }
+                    .idioma_header {
+                        @include flex(flex, center, center, 8px);
+                        .txt_idioma {
+                            color: #F5EDED;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 200%;
+                            letter-spacing: 0.07px;                        
+                        }
+                        .icon_flag {
+                            width: 35px;
+                        }
+                    }                
+                }
+            }
+        }
+        
+    }    
+}
+// End Responsive

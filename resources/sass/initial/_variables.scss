@@ -7,6 +7,13 @@ $footer-width: 1200px;
 
 $width-general: 1200px;
 
+@media only screen and (max-width: 600px) {
+  $header-width: 100%;
+  $footer-width: 100%;
+  
+  $width-general: 100%;
+}
+
 $colores: (
   "blanco":#FFFFFF,
   "negro": #000000,

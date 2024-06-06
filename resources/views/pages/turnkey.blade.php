@@ -12,7 +12,11 @@
                     </p>
                 </div>
                 <div class="part_two">
-                    <img src="{{ url('images/IBE-Imagotipo_07.png') }}" alt="">
+                    @if (Agent::isMobile())
+                        <img src="{{ url('images/mobile/IBE-Imagotipo_07_mobile.png') }}" alt="">
+                    @else
+                        <img src="{{ url('images/IBE-Imagotipo_07.png') }}" alt="">
+                    @endif
                 </div>
             </div>
         </div>
@@ -138,8 +142,8 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="{{ url('images/disenio_fabricacion/soldador_2.jpeg') }}" class="img_slid"
-                                            alt="">
+                                        <img src="{{ url('images/disenio_fabricacion/soldador_2.jpeg') }}"
+                                            class="img_slid" alt="">
                                     </li>
                                     <li class="splide__slide">
                                         <img src="{{ url('images/disenio_fabricacion/zoom_2.jpg') }}" class="img_slid"

@@ -21,6 +21,13 @@ main{
   width: 100%;
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  main{
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+  }  
+}
 
 
 body, html {
@@ -103,14 +110,14 @@ a:hover{
     z-index: 1;
   }
   .content_inter_banner {
-    width: 90%;  
+    width: 95%;  
     max-width: $width-general;    
     position: absolute;
-    bottom: 40px;
+    bottom: 18px;
     z-index: 3;
     @include flex(flex, space-between, flex-end, 15px);      
     .part_one {
-      width: 44%;
+      width: 80%;
       .logo {
         padding-bottom: 20px;
         &.servicios {
@@ -118,18 +125,18 @@ a:hover{
         }
       }
       .encabezado {
-        font-size: 34px;
+        font-size: 20px;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: left;          
         color: var(--blanco);
       }
       .text {
         padding-top: 5px;
-        font-size: 18px;
+        font-size: 8px;
         font-weight: 600;
-        line-height: 20px;
+        line-height: 10px;
         letter-spacing: 0em;
         text-align: left;
         
@@ -200,6 +207,67 @@ a:hover{
 
   }
 }
+@media only screen and (max-width: 600px) {
+  .content_banner_slider_catalogo {
+    width: 100%;
+    position: relative;
+    @include flex(flex, center, flex-end, 0);      
+    &.mb {
+      margin-bottom: 4rem;
+    }
+    .opa {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #00567E, $alpha: 0.5);
+      position: absolute;
+      z-index: 2;
+    }
+    .img_banner {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .content_inter_banner {
+      width: 100%;
+      position: absolute;
+      bottom: 5px;
+      z-index: 3;
+      @include flex(flex, flex-start, center, 15px);      
+      .part_one {
+        width: 70%;
+        .encabezado {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;          
+          color: var(--blanco);
+          padding-bottom: 5px;
+        }
+        
+        .text {
+          padding-top: 5px;
+          font-size: 8px;
+          font-weight: 600;
+          line-height: 11px;
+          letter-spacing: 0em;
+          text-align: left;
+          
+          color: var(--blanco);
+        }
+        .pro_line {
+          font-size: 10px;
+          font-weight: 700;
+          line-height: 10px;
+          letter-spacing: 0em;
+          text-align: left;          
+          color: var(--blanco);        
+        }
+      }
+  
+    }
+  }  
+}
 
 .banner_general {
   background: url(../../../images/nosotros.jpg);
@@ -250,6 +318,62 @@ a:hover{
       text-align: right;
     }
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner_general {
+    background: url(../../../images/nosotros.jpg);
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    @include flex(flex, center, center, 0);      
+    .content_inter_banner {
+      width: 90%;  
+      max-width: 100%;    
+      position: absolute;
+      @include flex(flex, space-between, center, 0);  
+      flex-direction: column;    
+      .part_one {
+        width: 100%;
+        .encabezado {
+          font-size: 38px;
+          font-weight: 700;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: var(--blanco);
+          padding-top: 30px;
+        }
+        .pro_line {
+          padding-top: 5px;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: var(--blanco);  
+        }
+        .text {
+          padding-top: 2rem;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: var(--blanco);
+        }
+      }
+      .part_two {
+        width: 50%;
+        text-align: center;
+        padding-top: 30px;
+      }
+    }
+  }  
 }
 
 .splide {
@@ -454,6 +578,233 @@ a:hover{
       width: 22%;
   }
 } 
+
+.mobile {
+  display: none;
+}
+
+// Responsive
+@media only screen and (max-width: 600px) {
+  #btnPrev {
+    width: 22px;
+  }
+
+  #btnNext {
+    width: 22px;
+  }
+
+.mobile {
+  display: block;
+  .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      z-index: 1001;
+      color: #00567E;
+  }
+  
+  .menu {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      background-color: #FFF;
+      overflow-x: hidden;
+      transition: 0.5s;
+      z-index: 1000;
+  
+      ul {
+          list-style-type: none;
+          padding: 5rem 0 0 0;
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          li {
+            padding-bottom: 20px;
+            .menu_list {
+              width: 100%;
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--primary);
+                &:hover {
+                    border: 1px solid  var(--primary);
+                    padding: 5px 10px;
+                    border-radius: 15px;
+                    color: var(--primary);
+                }
+            }
+            &.active {
+                .menu {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: var(--primary); 
+                }
+            }                
+            .logo {
+                width: 113px;
+                height: 39.06px;
+                background-image: url(../../../images/IBE-Logotipo_06.png);
+                cursor: pointer;  
+                margin: 0 auto;              
+            }
+            &.relative_li {
+                position: relative;
+                .cnt_redes {
+                    position: absolute;
+                    background-color: var(--blanco);
+                    border-radius: 5px;
+                    z-index: 10;
+                    top: 40px;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    .ul {
+                        padding: 15px 14px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+                        align-items: flex-start;
+                        width: 115px;
+                        .red_social {
+                            color: var(--primary);
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 20.48px;
+                            text-align: left;      
+                            &:hover {
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 25.6px;
+                                text-align: left;   
+                                color: var(--primary);                                 
+                            }                          
+                        }
+                    }
+                }
+            }
+            .idioma_header {
+                @include flex(flex, center, center, 8px);
+                .txt_idioma {
+                    color: #F5EDED;
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 200%;
+                    letter-spacing: 0.07px;                        
+                }
+                .icon_flag {
+                    width: 35px;
+                }
+            }                
+        }          
+      }
+  }    
+  }
+  .content_banner_azul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--primary);          
+    @include flex(flex, space-between, center, 20px);
+    flex-direction: column;
+    &.mb {
+      margin-bottom: 6rem;
+    }
+    &.mt {
+      margin-top: 6rem;
+    }  
+    .part_one {
+        width: 100%;                
+        .b {                
+            @include flex(flex, space-between, center, 20px);        
+            flex-direction: column;        
+            .h1 {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 34px;
+                letter-spacing: 0em;
+                text-align: left;                
+                color: var(--blanco);            
+            }
+            .box_amarillo {
+                border-radius: 13px;
+                padding: 8px 20px;
+                background-color: var(--blanco);
+                p {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 38px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: var(--amarillo);                        
+                }
+            }
+        }
+        .text {            
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #D9D9D9;
+            padding-top: 20px;
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #FFF;
+            }                        
+        }
+        .href_blanco {
+            width: 100%;
+            margin: 20px 0 0 0;
+            @include flex(flex, flex-start, center, 10px); 
+            .p_a{
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 12px;
+                letter-spacing: 0em;
+                text-align: left;                    
+                color: var(--blanco);                   
+            } 
+            svg path { fill: var(--blanco)}
+            svg circle { fill: var(--blanco)}
+            svg rect { fill: var(--blanco)}   
+            svg {
+                width: 12px;
+                height: 17.57px;
+            }   
+            &:hover {
+                svg path { fill: var(--amarillo)}
+                svg circle { fill: var(--amarillo)}
+                svg rect { fill: var(--amarillo)}   
+                svg {
+                    width: 12px;
+                    height: 17.57px;
+                }                       
+            }             
+          }            
+    }
+    .part_two {
+        width: 100%;
+        text-align: center;
+        img {
+          padding-top: 30px;
+          width: 150px;
+        }
+    }
+  } 
+}
+// End Responsive
 
 
 .espaciador {

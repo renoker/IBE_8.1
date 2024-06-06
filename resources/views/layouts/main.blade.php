@@ -43,6 +43,16 @@
     @include('layouts.footer')
 
     @vite('resources/js/global.js')
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.style.right === '0px') {
+                menu.style.right = '-250px';
+            } else {
+                menu.style.right = '0px';
+            }
+        }
+    </script>
     @yield('scripts')
 </body>
 
