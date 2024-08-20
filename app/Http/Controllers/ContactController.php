@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
+use App\Mail\ContactoMail;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -36,6 +38,16 @@ class ContactController extends Controller
         $row->phone = $request->phone;
         $row->email = $request->email;
         $row->message = $request->message;
+
+        $details = [
+            'name' => $row->name,
+            'company' => $row->company,
+            'phone' => $row->phone,
+            'email' => $row->email,
+            'message' => $row->message
+        ];
+
+        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
 
         $row->save();
 
