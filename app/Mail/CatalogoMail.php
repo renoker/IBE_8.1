@@ -5,6 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -13,12 +14,14 @@ class CatalogoMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $pdfPath;
+
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($pdfPath)
     {
-        //
+        $this->pdfPath = $pdfPath;
     }
 
     /**
@@ -27,7 +30,7 @@ class CatalogoMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Catalogo Mail',
+            subject: 'Catálogo IBE',
         );
     }
 
@@ -37,7 +40,7 @@ class CatalogoMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'view.name', // Cambia 'view.name' por la vista que usarás
         );
     }
 
@@ -48,6 +51,10 @@ class CatalogoMail extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        return [
+            Attachment::fromPath($this->pdfPath)
+                ->as('catalogo.pdf')
+                ->withMime('application/pdf'),
+        ];
     }
 }

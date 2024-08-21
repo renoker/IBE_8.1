@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreCotizacionRequest;
 use App\Http\Requests\UpdateCotizacionRequest;
+use App\Mail\CatalogoMail;
 use App\Models\Cotizacion;
+use Illuminate\Support\Facades\Mail;
 
 class CotizacionController extends Controller
 {
@@ -37,8 +39,10 @@ class CotizacionController extends Controller
         $row->phone =           $request->phone;
         $row->email =           $request->email;
         $row->message =         $request->message;
-
         $row->save();
+
+        $pdfPath = storage_path('app/public/pdf/catalogo-comprimido.pdf');
+        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new CatalogoMail($pdfPath));
 
         return redirect()->back()->with('success', 'Nos pondremos en contacto contigo en un máximo de 24 horas.');
     }
