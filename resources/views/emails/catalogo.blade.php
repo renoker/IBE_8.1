@@ -23,8 +23,8 @@
         }
 
         .header {
-            background-color: #004085;
-            color: white;
+            background-color: transparent;
+            color: #00567E;
             padding: 10px;
             text-align: center;
         }
@@ -41,7 +41,7 @@
         }
 
         .content h1 {
-            color: #004085;
+            color: #00567E;
             font-size: 24px;
         }
 
@@ -55,7 +55,7 @@
             margin: 20px 0;
             font-size: 18px;
             color: white;
-            background-color: #004085;
+            background-color: #00567E;
             text-decoration: none;
             border-radius: 5px;
         }
@@ -73,7 +73,7 @@
         .product h2 {
             font-size: 20px;
             margin: 10px 0;
-            color: #004085;
+            color: #00567E;
         }
 
         .footer {
@@ -106,7 +106,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="logo.png" alt="IBE Integral Solutions">
+            <img src="https://ibesolutions.com.mx/images/icon_home_iqnet.png" alt="IBE Integral Solutions">
             <h1>Catálogo IBE Integral Solutions</h1>
         </div>
         <div class="content">
