@@ -22,8 +22,8 @@
 
         @if ($details['maquina']->image)
             <p><strong>Imagen:</strong></p>
-            <img src="https://ibesolutions.com.mx/images/maquinas/{{ $details['maquina']->image }}"
-                alt="Imagen de la Máquina" style="max-width: 100%; height: auto;">
+            <img src="https://ibesolutions.com.mx/{{ $details['maquina']->image }}" alt="Imagen de la Máquina"
+                style="max-width: 100%; height: auto;">
         @endif
 
         <p><strong>Modelo:</strong> {{ $details['maquina']->model }}</p>
