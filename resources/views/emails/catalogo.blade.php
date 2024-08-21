@@ -113,8 +113,6 @@
             <h1>Descubre nuestras soluciones en maquinaria</h1>
             <p>En IBE Integral Solutions, nos enorgullece ofrecer una amplia gama de máquinas industriales diseñadas
                 para mejorar la eficiencia y productividad de tu negocio.</p>
-
-            <a href="https://ibesolutions.com.mx/catalogo" class="button">Ver Catálogo Completo</a>
         </div>
         <div class="footer">
             <p>&copy; 2024 IBE Integral Solutions. Todos los derechos reservados.</p>
