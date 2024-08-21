@@ -40,7 +40,7 @@ class CatalogoMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name', // Cambia 'view.name' por la vista que usarás
+            markdown: 'emails.catalogo'
         );
     }
 
