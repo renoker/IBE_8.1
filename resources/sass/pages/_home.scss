@@ -3918,23 +3918,26 @@
 
 
 .banner_general_nosotros {
-    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 0.23%), url(../../../images/030524.png);
+    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 0.23%), url(../../../images/fondo_nosotros.jpg);
     /* Set a specific height */
-    min-height: 400px;
+    min-height: 600px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 100%; 
     @include flex(flex, center, center, 0);      
     .content_inter_banner {
       width: 90%;  
       max-width: $width-general;    
       position: absolute;
-      @include flex(flex, space-between, center, 0);      
+      display: flex;
+
+      flex-direction: column;
       .part_one {
         width: 65%;
         .encabezado {
+        padding-top: 40px;
           font-size: 68px;
           font-weight: 700;
           line-height: 68px;
@@ -3953,9 +3956,9 @@
         }
         .text {
           padding-top: 2rem;
-          font-size: 20px;
+          font-size: 17px;
           font-weight: 500;
-          line-height: 22px;
+          line-height: 25px;
           letter-spacing: 0em;
           text-align: left;
           color: var(--blanco);
@@ -3963,7 +3966,10 @@
       }
       .part_two {
         width: 30%;
-        text-align: right;
+        text-align: left;
+        img {
+            width: 300px;
+        }
       }
     }
 }
@@ -4022,7 +4028,7 @@
 }
 
 .banner_general_turnkey {
-    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/turnkey_portada.jpg);
+    background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/disenio_fabricacion_portada.jpg);
     /* Set a specific height */
     min-height: 400px;
     /* Create the parallax scrolling effect */

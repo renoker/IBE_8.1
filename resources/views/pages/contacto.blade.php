@@ -18,7 +18,7 @@
         </div>
         {{-- Contacto --}}
         <div class="content_contacto">
-            <img src="{{ url('images/back_contacto.jpg') }}" class="iamgen_fondo" alt="">
+            <img src="{{ url('images/contactanos_backgraund.jpg') }}" class="iamgen_fondo" alt="">
             <div class="opacidad">
                 <div class="content_contacto">
                     <h1 class="h1">{{ __('Contact Us') }}</h1>
@@ -64,7 +64,7 @@
             </div>
         </div>
         {{-- Galeria --}}
-        <div class="content_galeria_contacto">
+        {{-- <div class="content_galeria_contacto">
             <div class="box_galeria">
                 <div class="h1">Galería</div>
 
@@ -105,7 +105,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 

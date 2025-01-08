@@ -5,7 +5,7 @@
     <div class="conten_padre">
         <div class="content_banner_slider">
             <div class="opa"></div>
-            <video src="{{ url('videos/home_video.mp4') }}" autoplay loop class="img_banner"></video>
+            <video src="{{ url('videos/corporativo.mp4') }}" autoplay muted loop class="img_banner"></video>
             <div class="content_inter_banner">
                 <div class="part_one">
                     <section class="splide" id="principal" aria-label="">

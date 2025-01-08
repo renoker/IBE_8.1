@@ -80,16 +80,16 @@
     {{-- Imagenes --}}
     <div class="box_imagenes">
         <div class="content_imagen_zoom">
-            <img src="{{ url('images/1.jpg') }}" class="zoom scale_1" alt="">
+            <img src="{{ url('images/nosotros_1.jpg') }}" class="zoom scale_1" alt="">
         </div>
         <div class="content_imagen_zoom">
-            <img src="{{ url('images/2.jpg') }}" class="zoom scale_1" alt="">
+            <img src="{{ url('images/nosotros_2.jpg') }}" class="zoom scale_1" alt="">
         </div>
         <div class="content_imagen_zoom">
-            <img src="{{ url('images/3.jpg') }}" class="zoom scale_1 soldador" alt="">
+            <img src="{{ url('images/nosotros_3.jpg') }}" class="zoom scale_1 soldador" alt="">
         </div>
         <div class="content_imagen_zoom">
-            <img src="{{ url('images/op_4.jpeg') }}" class="zoom scale_1" alt="">
+            <img src="{{ url('images/nosotros_4.jpg') }}" class="zoom scale_1" alt="">
         </div>
     </div>
     {{-- Certificaciones slider --}}
@@ -161,7 +161,7 @@
     </div>
     {{-- Contacto --}}
     <div class="content_contacto">
-        <img src="{{ url('images/back_contacto.jpg') }}" class="iamgen_fondo" alt="">
+        <img src="{{ url('images/contactanos_backgraund.jpg') }}" class="iamgen_fondo" alt="">
         <div class="opacidad">
             <div class="content_contacto">
                 <h1 class="h1">{{ __('Contact Us') }}</h1>

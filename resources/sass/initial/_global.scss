@@ -270,14 +270,14 @@ a:hover{
 }
 
 .banner_general {
-  background: url(../../../images/nosotros.jpg);
+  background: linear-gradient(93.9deg, #003E5B 0, rgba(0, 86, 126, 0.5) 106.23%), url(../../../images/detalle_catalogo_back.jpg);
   /* Set a specific height */
   min-height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;   
+  background-size: 100%;   
   @include flex(flex, center, center, 0);      
   .content_inter_banner {
     width: 90%;  

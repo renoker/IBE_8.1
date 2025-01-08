@@ -135,18 +135,14 @@
                 {{-- Slider DOS --}}
                 <div class="item_barra mt-10">
                     <div class="part_two l">
-                        <img src="{{ url('images/disenio_fabricacion/portada.jpg') }}" alt="">
+                        <img src="{{ url('images/disenio_fabricacion_1.jpg') }}" alt="">
                     </div>
                     <div class="part_two_slider l">
                         <section class="splide" id="barra_2" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="{{ url('images/disenio_fabricacion/soldador_2.jpeg') }}"
-                                            class="img_slid" alt="">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="{{ url('images/disenio_fabricacion/zoom_2.jpg') }}" class="img_slid"
+                                        <img src="{{ url('images/disenio_fabricacion_zoom_1.jpg') }}" class="img_slid"
                                             alt="">
                                     </li>
                                 </ul>
@@ -199,14 +195,14 @@
                 {{-- Slider CUATRO --}}
                 <div class="item_barra mt-10">
                     <div class="part_two l">
-                        <img src="{{ url('images/automatizacion/portada.jpg') }}" alt="">
+                        <img src="{{ url('images/disenio_fabricacion_2.jpg') }}" alt="">
                     </div>
                     <div class="part_two_slider l">
                         <section class="splide" id="barra_4" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="{{ url('images/automatizacion/zoom_1.jpg') }}" class="img_slid"
+                                        <img src="{{ url('images/disenio_fabricacion_zoom_2.jpg') }}" class="img_slid"
                                             alt="">
                                     </li>
                                 </ul>
@@ -243,7 +239,7 @@
                         </div>
                     </div>
                     <div class="part_two r_a">
-                        <img src="{{ url('images/distribucion_planta/distr.png') }}" alt="">
+                        <img src="{{ url('images/disenio_fabricacion_5.jpg') }}" alt="">
                     </div>
                     <div class="part_two_slider r">
                         <section class="splide" id="barra_5" aria-labelledby="carousel-heading">
@@ -261,15 +257,15 @@
                 {{-- Slider SEIS --}}
                 <div class="item_barra mt-10">
                     <div class="part_two l">
-                        <img src="{{ url('images/instalacion_maquinaria/IMG_5239.jpg') }}" alt="">
+                        <img src="{{ url('images/disenio_fabricacion_3.jpg') }}" alt="">
                     </div>
                     <div class="part_two_slider l">
                         <section class="splide" id="barra_6" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="{{ url('images/instalacion_maquinaria/IMG_5239.jpg') }}"
-                                            class="img_slid" alt="">
+                                        <img src="{{ url('images/disenio_fabricacion_zoom_3.jpg') }}" class="img_slid"
+                                            alt="">
                                     </li>
                                 </ul>
                             </div>
@@ -297,7 +293,7 @@
                         </div>
                     </div>
                     <div class="part_two r_a">
-                        <img src="{{ url('images/capacitacion_personal/portada.jpg') }}" alt="">
+                        <img src="{{ url('images/disenio_fabricacion_4.jpg') }}" alt="">
                     </div>
                     <div class="part_two_slider r">
                         <section class="splide" id="barra_7" aria-labelledby="carousel-heading">
