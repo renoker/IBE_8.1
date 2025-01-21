@@ -5,7 +5,9 @@
     <div class="conten_padre">
         <div class="content_banner_slider">
             <div class="opa"></div>
-            <video src="{{ url('videos/corporativo.mp4') }}" autoplay muted loop class="img_banner"></video>
+            <video id="videoPrincipal" muted loop class="img_banner">
+                <source src="{{ url('videos/corporativo.mp4') }}" type="video/mp4">
+            </video>
             <div class="content_inter_banner">
                 <div class="part_one">
                     <section class="splide" id="principal" aria-label="">
@@ -184,4 +186,18 @@
 @endsection
 @section('scripts')
     @vite('resources/js/home.js')
+    <script>
+        const video = document.getElementById('videoPrincipal');
+
+        // Espera a que los metadatos del video estén listos
+        video.addEventListener('loadedmetadata', () => {
+            // Establece el tiempo de inicio al minuto 10 (600 segundos)
+            video.currentTime = 60;
+        });
+
+        // Opcional: Reproduce automáticamente cuando el video está listo
+        video.addEventListener('canplay', () => {
+            video.play();
+        });
+    </script>
 @endsection
