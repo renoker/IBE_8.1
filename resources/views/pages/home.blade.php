@@ -192,7 +192,7 @@
         // Espera a que los metadatos del video estén listos
         video.addEventListener('loadedmetadata', () => {
             // Establece el tiempo de inicio al minuto 10 (600 segundos)
-            video.currentTime = 20;
+            video.currentTime = 10;
         });
 
         // Opcional: Reproduce automáticamente cuando el video está listo
