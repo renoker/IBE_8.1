@@ -48,7 +48,7 @@
             <div class="parte-right">
                 <div class="box">
                     <div class="mosca">
-                        <a href="https://api.whatsapp.com/send?phone=+524521216222&text=Hola,%20necesito%20ayuda"
+                        <a href="https://api.whatsapp.com/send?phone=524521216222&text=¡Hola!%20Estoy%20interesado%20en%20adquirir%20uno%20de%20sus%20servicios"
                             target="_blank">
                             <img src="{{ url('images/Mosca.svg') }}" class="moscaIcon" alt="">
                         </a>
