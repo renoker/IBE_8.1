@@ -154,7 +154,8 @@
     "Objetive" : "Objetivo",
     "Quote" : "Cotizar",
     "Former" : "Anterior",
-    "Following" : "Siguiente"
+    "Following" : "Siguiente",
+    "https://api.whatsapp.com/send?phone=524521586184&text=Hello!%20Thank%20you%20for%20your%20interest%20in%20our%20machines%20and%20services.%20How%20can%20we%20assist%20you%3F" : "https://api.whatsapp.com/send?phone=524521586184&text=%C2%A1Hola!%20Gracias%20por%20tu%20inter%C3%A9s%20en%20nuestras%20m%C3%A1quinas%20y%20servicios.%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%3F"
 }
 
 

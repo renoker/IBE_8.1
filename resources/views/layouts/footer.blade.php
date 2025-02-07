@@ -48,8 +48,11 @@
             <div class="parte-right">
                 <div class="box">
                     <div class="mosca">
-                        <a href="https://api.whatsapp.com/send?phone=524521216222&text=¡Hola!%20Estoy%20interesado%20en%20adquirir%20uno%20de%20sus%20servicios"
-                            target="_blank">
+                        <a href="{!! htmlspecialchars_decode(
+                            __(
+                                'https://api.whatsapp.com/send?phone=524521586184&text=Hello!%20Thank%20you%20for%20your%20interest%20in%20our%20machines%20and%20services.%20How%20can%20we%20assist%20you%3F',
+                            ),
+                        ) !!}" target="_blank">
                             <img src="{{ url('images/Mosca.svg') }}" class="moscaIcon" alt="">
                         </a>
                     </div>
