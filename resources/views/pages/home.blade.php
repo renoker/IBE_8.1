@@ -187,17 +187,12 @@
 @section('scripts')
     @vite('resources/js/home.js')
     <script>
-        const video = document.getElementById('videoPrincipal');
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById("videoPrincipal");
 
-        // Espera a que los metadatos del video estén listos
-        video.addEventListener('loadedmetadata', () => {
-            // Establece el tiempo de inicio al minuto 10 (600 segundos)
-            video.currentTime = 5;
-        });
-
-        // Opcional: Reproduce automáticamente cuando el video está listo
-        video.addEventListener('canplay', () => {
-            video.play();
+            video.play().catch(error => {
+                console.log("Autoplay bloqueado. El usuario debe interactuar primero.");
+            });
         });
     </script>
 @endsection
