@@ -5,7 +5,7 @@
     <div class="conten_padre">
         <div class="content_banner_slider">
             <div class="opa"></div>
-            <video id="videoPrincipal" muted loop class="img_banner">
+            <video id="videoPrincipal" muted loop preload playsinline class="img_banner">
                 <source src="{{ url('videos/ibe_corporativo_2025.mp4') }}" type="video/mp4">
             </video>
             <div class="content_inter_banner">
