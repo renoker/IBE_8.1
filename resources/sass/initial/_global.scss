@@ -819,3 +819,23 @@ a:hover{
   height: 80px;
   background-color: transparent;
 }
+
+@media only screen and (max-width: 600px) {
+video {
+  width: 100%;
+  height: auto;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+}
