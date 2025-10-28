@@ -119,22 +119,13 @@
             </ul>
             <div class="redes_all">
                 <div class="redes">
-                    <a href="">
-                        <img src="{{ url('images/Linkedin.png') }}" alt="">
-                    </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/ibeintegralsolutions/" target="_blank">
                         <img src="{{ url('images/Instagram.png') }}" alt="">
                     </a>
-                    <a href="">
-                        <img src="{{ url('images/Behance.png') }}" alt="">
-                    </a>
-                    <a href="">
+                    <a href="https://www.tiktok.com/@ibeintegralsolutions?lang=es" target="_blank">
                         <img src="{{ url('images/Tiktok.png') }}" alt="">
                     </a>
-                    <a href="">
-                        <img src="{{ url('images/Youtube.png') }}" alt="">
-                    </a>
-                    <a href="">
+                    <a href="https://www.facebook.com/ibeintegralsolutions" target="_blank">
                         <img src="{{ url('images/Facebook.png') }}" alt="">
                     </a>
                 </div>
