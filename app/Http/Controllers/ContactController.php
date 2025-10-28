@@ -50,7 +50,7 @@ class ContactController extends Controller
             ];
 
             // Enviar email a ambos destinatarios
-            Mail::to(['rodolfoulises.ramirez@gmail.com', 'ventas@integraibe.com.mx'])->send(new ContactoMail($details));
+            Mail::to(['rodolfoulises.ramirez@gmail.com', 'ventas@integraibe.com.mx', 'ventasonlineibe@integraibe.com.mx'])->send(new ContactoMail($details));
 
             // Guardar en base de datos
             $row->save();
