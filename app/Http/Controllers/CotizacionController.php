@@ -55,7 +55,7 @@ class CotizacionController extends Controller
             'maquina' => $maquinas
         ];
 
-        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new CatalogoMaquinasMail($details));
+        Mail::to(['rodolfoulises.ramirez@gmail.com', 'ventas@integraibe.com.mx'])->send(new CatalogoMaquinasMail($details));
 
         $pdfPath = storage_path('app/public/pdf/catalogo-comprimido.pdf');
         Mail::to($row->email)->send(new CatalogoMail($pdfPath));

@@ -49,8 +49,8 @@ class ContactController extends Controller
                 'message' => $row->message
             ];
 
-            // Enviar email
-            Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
+            // Enviar email a ambos destinatarios
+            Mail::to(['rodolfoulises.ramirez@gmail.com', 'ventas@integraibe.com.mx'])->send(new ContactoMail($details));
 
             // Guardar en base de datos
             $row->save();
