@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateContactRequest;
 use App\Mail\ContactoMail;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
@@ -31,27 +32,36 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        $row = new Contact;
+        try {
+            $row = new Contact;
 
-        $row->name = $request->name;
-        $row->company = $request->company;
-        $row->phone = $request->phone;
-        $row->email = $request->email;
-        $row->message = $request->message;
+            $row->name = $request->name;
+            $row->company = $request->company;
+            $row->phone = $request->phone;
+            $row->email = $request->email;
+            $row->message = $request->message;
 
-        $details = [
-            'name' => $row->name,
-            'company' => $row->company,
-            'phone' => $row->phone,
-            'email' => $row->email,
-            'message' => $row->message
-        ];
+            $details = [
+                'name' => $row->name,
+                'company' => $row->company,
+                'phone' => $row->phone,
+                'email' => $row->email,
+                'message' => $row->message
+            ];
 
-        Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
+            // Enviar email
+            Mail::to('rodolfoulises.ramirez@gmail.com')->send(new ContactoMail($details));
 
-        $row->save();
+            // Guardar en base de datos
+            $row->save();
 
-        return redirect()->back()->with('success', 'Nos pondremos en contacto contigo en un máximo de 24 horas.');
+            return redirect()->back()->with('success', 'Nos pondremos en contacto contigo en un máximo de 24 horas.');
+        } catch (\Exception $e) {
+            // Log del error para debugging
+            Log::error('Error sending contact email: ' . $e->getMessage());
+
+            return redirect()->back()->with('error', 'Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo o contáctanos directamente.');
+        }
     }
 
     /**

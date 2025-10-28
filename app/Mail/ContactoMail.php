@@ -39,7 +39,7 @@ class ContactoMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.contacto',
+            view: 'emails.contacto',
             with: ['details' => $this->details],
         );
     }
